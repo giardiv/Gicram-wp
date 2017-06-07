@@ -1,0 +1,24 @@
+@mixin respond-to($media)
+  @if $media == lg
+    @media (min-width: $screen-lg) {@content}
+  @else if $media == md
+    @media (min-width: $screen-md) {@content}
+  @else if $media == sm
+    @media (min-width: $screen-sm) {@content}
+  @else if $media == xs
+    @media (min-width: $screen-xs) {@content}
+  @else if $media == xxs
+    @media (max-width: $screen-xs - 1) {@content}
+
+=fuller
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+=cover
+  background-size: cover
+=scorer
+  &::after
+    content: "\A –"
+    white-space: pre

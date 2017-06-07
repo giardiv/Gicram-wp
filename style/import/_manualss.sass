@@ -1,0 +1,46 @@
+$mss-ratio : 14/6
+
+.row-manual-ss
+  height: $container-sm / $mss-ratio
+  @include respond-to(md)
+    height: $container-md / $mss-ratio
+  @include respond-to(lg)
+    height: $container-lg / $mss-ratio
+  .manual-ss
+    position: relative
+    height: 100%
+    background: $white-z
+    .manual-ss-img
+      +fuller
+      +cover
+      display: none
+      &:last-child
+        display: block
+    img
+      width: 100%
+  .manual-ss-controls
+    img
+      cursor: pointer
+  .manual-ss-legend
+    margin: 0 30px
+    @include respond-to(lg)
+      margin-top: 55px
+    font-size: 10pt
+    border-top: 2px Solid $white-z
+    border-bottom: 2px Solid $white-z
+    text-align: center
+    text-transform: uppercase
+    color: $white-z
+    padding: 30px 0
+    b
+      display: block
+      margin-bottom: -10px
+  >.col-md-9, >.col-md-3
+    padding: 0
+    img
+      padding: 0
+
+.green-bg
+  background: $green-z
+.green-cl
+  color: $green-z
