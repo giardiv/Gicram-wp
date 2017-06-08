@@ -1,11 +1,25 @@
 // CAROUSEL
-.carousel
+$carousel-height-ratio : 709/401
+
+.carousel-z
+  position: relative
   margin-bottom: 80px
-.carousel .item img
+.carousel-z .item img
   width: 100%
-.carousel-inner
+.carousel-inner-z
   width: 70%
   margin-left: 15%
+  position: relative
+  height: (0.7*($container-lg - $grid-gutter-width)) / $carousel-height-ratio
+  >.item
+    position: absolute
+    width: 100%
+    height: 100%
+    +respond-to(lg)
+      background-size: auto (0.7*($container-lg - $grid-gutter-width)) / $carousel-height-ratio
+    background-position: left center
+    //background-size: contain
+    background-repeat: no-repeat
 .carousel-control.left, .carousel-control.right
   background: transparent
   .carousel-arrow
@@ -29,3 +43,70 @@
     font-weight: 500
     font-size: 12px
     letter-spacing: 6px
+
+.carousel-inner-z>.c-hider
+  -webkit-animation-name: unwidther
+  -webkit-animation-duration: .5s
+  -webkit-animation-fill-mode: forwards
+  animation-name: unwidther
+  animation-duration: .5s
+  animation-fill-mode: forwards
+  left: 0
+  display: block
+  //animation-iteration-count: 1
+
+.carousel-inner-z>.c-shower
+  display: block
+  -webkit-animation-name: widther
+  -webkit-animation-duration: 1s
+  -webkit-animation-fill-mode: forwards
+  animation-name: widther
+  animation-duration: 1s
+  animation-fill-mode: forwards
+  //right: 0
+  background-position: right center
+  //animation-iteration-count: 1
+
+@-webkit-keyframes widther
+  from
+    display: block
+    width: 0
+  50%
+    width: 100%
+  to
+    width: 100%
+    display: block
+@keyframes widther
+  from
+    display: block
+    width: 0
+    right: 0
+    left: auto
+  60%
+    width: 0
+    right: 0
+    left: auto
+  99%
+    right: 0
+    left: auto
+  to
+    width: 100%
+    display: block
+    right: auto
+    left: 0
+
+@-webkit-keyframes unwidther
+  from
+    width: 100%
+  to
+    width: 0
+    display: none
+@keyframes unwidther
+  from
+    width: 100%
+    display: block
+  99%
+    display: block
+  to
+    width: 0
+    display: none
