@@ -11,8 +11,10 @@ $bootstrap-sass-asset-helper: false !default;
 $white-z : #F5F1ED;
 $black-z : #222;
 $gray-z : #ECE5DD;
+$gray-half-darker-z : darken($gray-z, 5%);
 $gray-darker-z : darken($gray-z, 10%) ;
 $green-z : #055A14;
+$red-z : #DB3C00;
 
 
 $gray-base:              #000 !default;

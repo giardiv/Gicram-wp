@@ -43,19 +43,36 @@ ul
 ul:last-child
   margin-bottom: 0
 
+.btn-ctn
+  text-align: center
+  padding: 15px 0
+  .btn
+    display: inline-block
+.triple-container
+  >div
+    padding: 50px $grid-gutter-width/2
+  .triple-img-container
+    position: relative
+    padding: 20px $grid-gutter-width/2
+    img
+      width: 100%
+
 // TYPO
 h1
   font-weight: 700
   letter-spacing: 6px
   font-size: 92pt
-  margin: 160px 0
+  padding: 160px 0
+  margin: 0
 .h1-mini
   color: $white-z
   font-size: 14pt
   text-transform: uppercase
   text-align: center
-  margin: 100px 0
+  padding: 100px 0
   +scorer
+  .text
+    +scorer
 h2
   font-weight: 700
   font-size: 52pt
@@ -92,3 +109,21 @@ h4
   top: 0
   height: 100%
   background: $gray-darker-z
+.background-full-left
+  @extend .background-full
+  width: 100%
+  background: $gray-half-darker-z
+.background-full-right
+  @extend .background-full-left
+  left: 50%
+.background-gray
+  background: $gray-z
+
+// COLORANCE
+.text-red, a.text-red
+  color: $red-z
+
+// MINI CLASS
+.h1-mini .no-after, .no-after
+  &::after
+    content: none
