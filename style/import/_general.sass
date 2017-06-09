@@ -40,6 +40,9 @@ blockquote
 ul
   padding-left: 15px
   margin-bottom: 50px
+  li
+    margin-top: 16px
+    font-size: 12pt
 ul:last-child
   margin-bottom: 0
 
@@ -56,6 +59,42 @@ ul:last-child
     padding: 20px $grid-gutter-width/2
     img
       width: 100%
+.double-container
+  >.double
+    padding: 40px 60px
+.quad
+  padding: 50px $grid-gutter-width/2
+.dark
+  background: $gray-ultra-darker-z
+  *
+    color: $white-z
+.info-p
+  text-transform: none
+  font-size: 10pt
+  font-weight: 400
+.marger-50
+  margin-bottom: 50px
+address
+  font-size: 12pt
+  text-align: center
+  strong
+    text-transform: uppercase
+
+// BTN
+.btn
+  border-color: $black-z
+  color: $black-z
+  background-color: transparent
+  &:hover
+    background-color: $black-z
+    color: $white-z
+.btn-dark
+  border-color: $gray-double-darker-z
+  color: $gray-double-darker-z
+  background-color: $gray-ultra-darker-z
+  &:hover
+    background-color: $gray-double-darker-z
+    color: $gray-ultra-darker-z
 
 // TYPO
 h1
@@ -86,6 +125,9 @@ h3
   &::after
     content: "\A –"
     white-space: pre
+.h4-double
+  @extend .h4-under
+  text-align: center
 h4
   font-weight: 700
   font-size: 16px
@@ -96,12 +138,17 @@ h4
   border: 0
   background-color: $black-z
   margin: 30px 0
+p
+  font-size: 12pt
 
 // DARKANCE
 .container-dark
   position: relative
   >*
     position: relative
+.container-dark-vert
+  @extend .container-dark
+  overflow-y: hidden
 .background-full
   position: absolute
   width: 200%
@@ -113,9 +160,21 @@ h4
   @extend .background-full
   width: 100%
   background: $gray-half-darker-z
+.background-full-left-dark
+  @extend .background-full-left
+  background: $gray-ultra-darker-z
 .background-full-right
   @extend .background-full-left
   left: 50%
+.background-full-vert
+  @extend .background-full
+  width: 100%
+  left: 0
+  height: 200%
+  background: $gray-half-darker-z
+.background-full-vert-light
+  @extend .background-full-vert
+  background: $gray-z
 .background-gray
   background: $gray-z
 

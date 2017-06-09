@@ -9,10 +9,12 @@ $bootstrap-sass-asset-helper: false !default;
 //## Gray and brand colors for use across Bootstrap.
 
 $white-z : #F5F1ED;
-$black-z : #222;
+$black-z : #403B36;
 $gray-z : #ECE5DD;
 $gray-half-darker-z : darken($gray-z, 5%);
 $gray-darker-z : darken($gray-z, 10%) ;
+$gray-double-darker-z : #8C8374;
+$gray-ultra-darker-z : #403B36;
 $green-z : #055A14;
 $red-z : #DB3C00;
 
@@ -38,7 +40,7 @@ $brand-danger:          #d9534f !default;
 //** Background color for `<body>`.
 $body-bg:               $gray-z !default;
 //** Global text color on `<body>`.
-$text-color:            $gray-dark !default;
+$text-color:            $black-z !default;
 
 //** Global textual link color.
 $link-color:            $black-z !default;
@@ -197,14 +199,14 @@ $btn-border-radius-small:        $border-radius-small !default;
 //##
 
 //** `<input>` background color
-$input-bg:                       #fff !default;
+$input-bg:                       $gray-ultra-darker-z !default;
 //** `<input disabled>` background color
 $input-bg-disabled:              $gray-lighter !default;
 
 //** Text color for `<input>`s
-$input-color:                    $gray !default;
+$input-color:                    $gray-z !default;
 //** `<input>` border color
-$input-border:                   #ccc !default;
+$input-border:                   $gray-ultra-darker-z !default;
 
 // TODO: Rename `$input-border-radius` to `$input-border-radius-base` in v4
 //** Default `.form-control` border radius
@@ -216,10 +218,10 @@ $input-border-radius-large:      $border-radius-large !default;
 $input-border-radius-small:      $border-radius-small !default;
 
 //** Border color for inputs on focus
-$input-border-focus:             #66afe9 !default;
+$input-border-focus:             $gray-ultra-darker-z !default;
 
 //** Placeholder text color
-$input-color-placeholder:        #999 !default;
+$input-color-placeholder:        $gray-double-darker-z !default;
 
 //** Default `.form-control` height
 $input-height-base:              ($line-height-computed + ($padding-base-vertical * 2) + 2) !default;
@@ -340,7 +342,7 @@ $screen-md-max:              ($screen-lg-min - 1) !default;
 //** Number of columns in the grid.
 $grid-columns:              12 !default;
 //** Padding between columns. Gets divided in half for the left and right.
-$grid-gutter-width:         30px !default;
+$grid-gutter-width:         60px !default;
 // Navbar collapse
 //** Point at which the navbar becomes uncollapsed.
 $grid-float-breakpoint:     $screen-sm-min !default;
