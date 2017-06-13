@@ -8,6 +8,22 @@ body
   margin: 0
 .container-top > .row
   padding: 70px 0
+  &:first-child
+    margin-top: 300px
+.container-header
+  position: fixed
+  width: 100%
+  z-index: 1000
+  position: relative
+#logo
+  img
+    height: 60px
+#menu-btn
+  height: 50px
+  position: absolute
+  top: 0
+  right: -100px
+  cursor: pointer
 nav
   ul:first-child, ul
     padding: 0 20px
@@ -18,8 +34,9 @@ nav
   ul:last-child
     padding: 0 20px
     border-right: 1px $black-z Solid
-header
+#header
   padding: 30px 0
+  position: relative
 .navbar-link
   color: $navbar-default-link-color
   font-weight: 700

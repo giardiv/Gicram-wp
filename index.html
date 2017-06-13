@@ -17,11 +17,12 @@
   <![endif]-->
 </head>
 <body>
-  <div class="container container-top">
+  <div class="container container-header" style="position:fixed">
+    <div class="background-full" id="header-bg" style="opacity:0"></div>
     <!-- Header -->
-    <header class="row">
+    <header class="row" id="header">
       <div id="logo" class="col-md-6">
-        <a href="#"><img src="#" alt="Gicram" /></a>
+        <a href="#"><img src="images/LogoGicram-Fond-transp-705x191.png" alt="Gicram" /></a>
       </div>
       <nav class="col-md-6 ">
         <ul class="pull-right list-unstyled">
@@ -56,8 +57,10 @@
           </li>
         </ul>
       </nav>
+      <img src="images/menu.svg" id="menu-btn" />
     </header>
-
+  </div>
+  <div class="container container-top">
     <!-- Video -->
     <div class="row">
       <iframe src="https://player.vimeo.com/video/158933289?title=0&amp;byline=0&amp;portrait=0" class="col-md-12" height="700" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
@@ -65,9 +68,23 @@
     <!-- Dern Ope / SS -->
     <div class="row">
       <h1 class="col-md-11 col-md-offset-1">Dernières<br />Opérations</h1>
-      <h2>Bolloré Logistics</h2>
-      <hr class="hr-h2 " align="left" />
-      <h3 class="carousel-caption-z">2017 - lieux - date - nombre</h3>
+      <div class="row ss-caption">
+        <div class="row active">
+          <h2>Bolloré Logistics 1</h2>
+          <hr class="hr-h2 " align="left" />
+          <h3 class="carousel-caption-z">2017 - lieux - date - nombre</h3>
+        </div>
+        <div class="row hide-caption">
+          <h2>Bolloré Logistics 2</h2>
+          <hr class="hr-h2 " align="left" />
+          <h3 class="carousel-caption-z">2017 - lieux - date - nombre</h3>
+        </div>
+        <div class="row hide-caption">
+          <h2>Bolloré Logistics 3</h2>
+          <hr class="hr-h2 " align="left" />
+          <h3 class="carousel-caption-z">2017 - lieux - date - nombre</h3>
+        </div>
+      </div>
       <div id="carousel-1" class="carousel-z slide" data-ride="carousel-gicram">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -78,22 +95,10 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner-z" role="listbox">
           <div class="item" style="background-image:url(images/foo1.jpg)">
-            <!--img src="images/foo1.jpg" alt="...">
-            <div class="carousel-caption">
-              ...
-            </div-->
           </div>
           <div class="item" style="background-image:url(images/foo1b.jpg)">
-            <!--img src="images/foo1b.jpg" alt="...">
-            <div class="carousel-caption">
-              ...
-            </div-->
           </div>
           <div class="item" style="background-image:url(images/foo1c.jpg)">
-            <!--img src="images/foo1c.jpg" alt="...">
-            <div class="carousel-caption">
-              ...
-            </div-->
           </div>
         </div>
         <!-- Controls -->
@@ -117,7 +122,10 @@
         <div class="col-md-3 square square-text">
           <div class="square-top">
             21.01.2017
-            <span class="glyphicon glyphicon-plus"></span>
+            <span class="plus">
+              <span class="plus-h"></span>
+              <span class="plus-v"></span>
+            </span>
           </div>
           <div class="square-top">
             <b>Top text<br />—<br/></b>

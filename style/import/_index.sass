@@ -1,5 +1,6 @@
 // INDEX - ACTU
 .square
+  position: relative
   height: 292.5px
   padding: 20px
   .square-top
@@ -12,3 +13,34 @@
     font-size: 60px
 .row-square
   margin: 0
+
+
+// PLUS ANIMATED
+.plus
+  width: 32px
+  height: 32px
+  position: absolute
+  top: 20px
+  right: 20px
+  >span
+    display: block
+  .plus-h
+    width: 32px
+    height: 4px
+    background: $black-z
+    -webkit-transform-origin: 50% 50%
+    -moz-transform-origin: 50% 50%
+    -o-transform-origin: 50% 50%
+    transform-origin: 50% 50%
+    transform: rotate(90deg)
+    transform: -webkit-rotate(90deg)
+    top: 38%
+    position: relative
+    transition: all 0.5s
+  .plus-v
+    width: 32px
+    height: 4px
+    background: $black-z
+    position: relative
+    top: 25%
+    transition: all 0.5s

@@ -44,6 +44,32 @@ $carousel-height-ratio : 709/401
     font-size: 12px
     letter-spacing: 6px
 
+.ss-caption
+  position: relative
+  >.row
+    position: absolute
+    bottom: 0
+    &:first-child
+      position: relative
+.ss-caption .active
+  -webkit-animation-name: captioner
+  -webkit-animation-duration: 1.2s
+  -webkit-animation-fill-mode: forwards
+  animation-name: captioner
+  animation-duration: 1.2s
+  animation-fill-mode: forwards
+  margin-left: -100px
+  opacity: 0
+  display: block
+.ss-caption .hide-caption
+  display: block
+  -webkit-animation-name: uncaptioner
+  -webkit-animation-duration: .5s
+  -webkit-animation-fill-mode: forwards
+  animation-name: uncaptioner
+  animation-duration: .5s
+  animation-fill-mode: forwards
+
 .carousel-inner-z>.c-hider
   -webkit-animation-name: unwidther
   -webkit-animation-duration: .5s
@@ -53,8 +79,6 @@ $carousel-height-ratio : 709/401
   animation-fill-mode: forwards
   left: 0
   display: block
-  //animation-iteration-count: 1
-
 .carousel-inner-z>.c-shower
   display: block
   -webkit-animation-name: widther
@@ -63,9 +87,7 @@ $carousel-height-ratio : 709/401
   animation-name: widther
   animation-duration: 1s
   animation-fill-mode: forwards
-  //right: 0
   background-position: right center
-  //animation-iteration-count: 1
 
 @-webkit-keyframes widther
   from
@@ -110,3 +132,32 @@ $carousel-height-ratio : 709/401
   to
     width: 0
     display: none
+
+@keyframes captioner
+  from
+    display: block
+  1%
+    margin-left: -100px
+    opacity: 0
+  60%
+    margin-left: -100px
+    display: block
+    opacity: 0
+  to
+    margin-left: 0
+    display: block
+    opacity: 1
+
+@keyframes uncaptioner
+  from
+    display: block
+    opacity: 1
+    margin-left: 0px
+  99%
+    margin-left: -100px
+    display: block
+    opacity: 0
+  to
+    margin-left: -90px
+    display: none
+    opacity: 0
