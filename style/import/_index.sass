@@ -1,8 +1,16 @@
 // INDEX - ACTU
 .square
   position: relative
-  height: 292.5px
+  +respond-to(lg)
+    height: $container-lg / 4
   padding: 20px
+  &:hover
+    .plus-h
+      transform: rotate(180deg)
+      transform: -webkit-rotate(180deg)
+    .plus-v
+      transform: rotate(450deg)
+      transform: -webkit-rotate(450deg)
   .square-top
     display: block
     height: 33%
@@ -14,6 +22,10 @@
 .row-square
   margin: 0
 
+$bg-zoom : 10px
+.square-img
+  background-position: -1 * $bg-zoom -1 * $bg-zoom
+  background-size:
 
 // PLUS ANIMATED
 .plus
