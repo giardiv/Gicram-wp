@@ -24,8 +24,14 @@
 
 $bg-zoom : 10px
 .square-img
-  background-position: -1 * $bg-zoom -1 * $bg-zoom
-  background-size:
+  background-position: center -1 * $bg-zoom
+  transition: all 0.5s
+  &:hover
+    background-position: center 0
+    background-size: auto $container-lg / 4
+    opacity: 0.8
+  +respond-to(lg)
+    background-size: auto $container-lg / 4 + 2 * $bg-zoom
 
 // PLUS ANIMATED
 .plus
