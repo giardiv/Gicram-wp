@@ -18,7 +18,7 @@
 </head>
 <body>
   <div class="container container-header" style="position:fixed">
-    <div class="background-full" id="header-bg" style="opacity:0"></div>
+    <div class="background-full almost-white" id="header-bg" style="opacity:0"></div>
     <!-- Header -->
     <header class="row" id="header">
       <div id="logo" class="col-md-6">
@@ -38,13 +38,10 @@
         </ul>
         <ul class="text-right pull-right list-unstyled">
           <li>
-            <h5><small><a href="#" class="navbar-link">ACCUEIL</a></small></h5>
+            <h5><small><a href="groupe.php" class="navbar-link">NOTRE GROUPE</a></small></h5>
           </li>
           <li>
-            <h5><small><a href="#" class="navbar-link">NOTRE GROUPE</a></small></h5>
-          </li>
-          <li>
-            <h5><small><a href="#" class="navbar-link">NOTRE PHILOSOPHIE</a></small></h5>
+            <h5><small><a href="philo.php" class="navbar-link">NOTRE PHILOSOPHIE</a></small></h5>
           </li>
           <li>
             <h5><small><a href="#" class="navbar-link">SAVOIR FAIRE</a></small></h5>

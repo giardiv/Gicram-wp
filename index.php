@@ -1,6 +1,7 @@
 <?php include "header.php" ?>
     <!-- Video -->
-    <div class="row">
+    <div class="row container-dark">
+        <div class="background-full almost-white"></div>
       <iframe id="video" src="https://player.vimeo.com/video/158933289?title=0&amp;byline=0&amp;portrait=0" class="col-md-12" height="641" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
     </div>
     <!-- Dern Ope / SS -->
@@ -128,6 +129,10 @@
           </div>
         </div>
     <?php } ?>
+    <div class="row">
+      <h1 class="col-md-11 col-md-offset-1 animated left-animated">Nos clients<br />Témoignent</h1>
+    </div>
+
 
 
     <!-- Blockquote pointed -->
@@ -254,38 +259,8 @@
         </div>
       </div>
     </div>
-    <!-- Blockquote -->
-    <div class="row">
-      <blockquote class="col-md-10 col-md-offset-1">
-        <br />
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        <br /><br />
-        <b>Florian Saint-Genès</b>
-        <br/>
-      </blockquote>
-    </div>
     <!-- Triple -->
     <div class="row">
-      <h1 class="h1-mini container-dark">
-        <span class="background-full"></span>
-        <span class="text">Gicram  la force de plus de 40 ans d’expérience,<br />
-        la complémentarité de nos expertises à votre service</span>
-      </h1>
-      <div class="row triple-container container-dark">
-        <div class="background-full-left"></div>
-        <div class="col-md-4 triple-img-container">
-          <img src="images/foo1.jpg"/ />
-        </div>
-        <div class="col-md-4 background-gray">
-          Une véritable qualité <b>d’ECOUTE</b>  et de compréhension de vos enjeux,<br /><b>–</b><br/>
-          Des équipes à taille humaine pour un <b>ACCOMPAGNEMENT</b> personnalisé et une parfaite communication entre les corps d’experts, garants de l’efficacité et de la réussite du projet, architecturale et technique.
-          <br /><br/><b>Notre objectif ?</b><br />
-        </div>
-        <div class="col-md-4">
-          Répondre dès le départ à tous vos besoins et toutes les questions que pourrait soulever votre programme grâce à une étude approfondie et rigoureuse menée de concert par nos experts.<br /></br>
-          Grâce à nos équipes à taille humaine, vous bénéficiez d’un point d’entrée privilégié à l’éventail de nos expertises disponibles pour vous accompagner efficacement tout au long de votre projet.
-        </div>
-      </div>
       <h1 class="h1-mini container-dark">
         <span class="background-full"></span>
         <span class="text">Gicram  la force de plus de 40 ans d’expérience,<br />
@@ -312,10 +287,7 @@
           <a href="#" class="text-red">Nos clients témoignent</a></span>
       </h1>
     </div>
-    <!-- Image Only -->
-    <div class="row">
-      <img src="images/group.jpg" class="col-md-10 col-md-offset-1" />
-    </div>
+
     <!-- Double col -->
     <div class="row container-dark">
       <h1 class="h1-mini container-dark">
@@ -530,10 +502,4 @@
       </div>
     </div>
 <?php include "footer.php" ?>
-
-<script>
-$(document).ready(function(){
-    $("#actu-container").delay(100).load( "fb_feed.php" );
-})
-
-</script>
+<script src="javascripts/index.js"></script>
