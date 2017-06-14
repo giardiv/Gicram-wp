@@ -1,34 +1,11 @@
 <?php include "header.php" ?>
-<?php
-ini_set("allow_url_fopen", 1);
-
-function getGraphUrl($param){
-    return "https://graph.facebook.com/". $param ."access_token=747507452095376|f6820e656220a1284a717db298497e95";
-}
-function getContent($param){
-    $url = getGraphUrl($param);
-    return json_decode(file_get_contents($url));
-}
-$feed = getContent("419932878051585/feed?");
-$posts = array();
-foreach ($feed->data as $i => $post) {
-    if(isset($post->message)){
-        $object_id = getContent($post->id . "?fields=object_id&")->object_id;
-        if(isset($object_id)){
-            $img_url = "https://graph.facebook.com/" . $object_id . "/picture";
-            array_push($posts, array('id' => $post->id, 'img_url' => $img_url));
-            //echo "<img src='". $img_url ."'  />";
-        }
-    }
-}
-?>
     <!-- Video -->
     <div class="row">
-      <iframe src="https://player.vimeo.com/video/158933289?title=0&amp;byline=0&amp;portrait=0" class="col-md-12" height="700" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+      <iframe id="video" src="https://player.vimeo.com/video/158933289?title=0&amp;byline=0&amp;portrait=0" class="col-md-12" height="641" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
     </div>
     <!-- Dern Ope / SS -->
     <div class="row">
-      <h1 class="col-md-11 col-md-offset-1">Dernières<br />Opérations</h1>
+      <h1 class="col-md-11 col-md-offset-1 animated left-animated">Dernières<br />Opérations</h1>
       <div class="row ss-caption">
         <div class="row active">
           <h2>Bolloré Logistics 1</h2>
@@ -75,34 +52,39 @@ foreach ($feed->data as $i => $post) {
       <a class="top-1 center-block btn btn-primary" style="width:180px">Offres et disponibilités</a>
     </div>
     <!-- Actu -->
+    <?php if($dev){ ?>
     <div class="row">
       <h1 class="col-md-11 col-md-offset-1">Nos<br />Actualités</h1>
       <div class="row row-square">
-        <div class="col-md-3 square square-img" style="background-image:url(images/foo1.jpg)">
-        </div>
-        <div class="col-md-3 square square-text">
-          <div class="square-top">
-            21.01.2017
-            <span class="plus">
-              <span class="plus-h"></span>
-              <span class="plus-v"></span>
-            </span>
+        <div class="col-md-6 half-row-square">
+          <div class="col-md-6 square square-img" style="background-image:url(images/foo1.jpg)">
           </div>
-          <div class="square-top">
-            <b>Top text<br />—<br/></b>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+          <div class="col-md-6 square square-text">
+            <div class="square-top">
+              21.01.2017
+              <span class="plus">
+                <span class="plus-h"></span>
+                <span class="plus-v"></span>
+              </span>
+            </div>
+            <div class="square-top">
+              <b>Top text<br />—<br/></b>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+            </div>
           </div>
         </div>
-        <div class="col-md-3 square square-img" style="background-image:url(images/foo1.jpg)">
-        </div>
-        <div class="col-md-3 square square-text">
-          <div class="square-top">
-            21.01.2017
-            <span class="glyphicon glyphicon-plus"></span>
+        <div class="col-md-6 half-row-square">
+          <div class="col-md-6 square square-img" style="background-image:url(images/foo1.jpg)">
           </div>
-          <div class="square-top">
-            <b>Top text<br />—<br/></b>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+          <div class="col-md-6 square square-text">
+            <div class="square-top">
+              21.01.2017
+              <span class="glyphicon glyphicon-plus"></span>
+            </div>
+            <div class="square-top">
+              <b>Top text<br />—<br/></b>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+            </div>
           </div>
         </div>
       </div>
@@ -132,7 +114,22 @@ foreach ($feed->data as $i => $post) {
           <div class="col-md-3 square square-img" style="background-image:url(images/foo1.jpg)">
           </div>
       </div>
+      <a class="xbtn btn-primary" target="_blank" style="width:180px" href="https://www.facebook.com/Gicram-Groupe-419932878051585/">
+          Plus d'actualités
+      </a>
     </div>
+    <?php }else{ ?>
+
+        <div class="row">
+          <h1 class="col-md-11 col-md-offset-1 animated left-animated">Nos<br />Actualités</h1>
+
+          <div id="actu-container">
+              <h5 class="text-center"><b>Loading...</b></h5>
+          </div>
+        </div>
+    <?php } ?>
+
+
     <!-- Blockquote pointed -->
     <div class="row container-dark">
       <div class="background-full"></div>
@@ -478,7 +475,7 @@ foreach ($feed->data as $i => $post) {
     <!-- Contact -->
     <div class="row container-dark">
       <div class="background-full"></div>
-      <h1 class="col-md-11 col-md-offset-1">Contact</h1>
+      <h1 class="col-md-11 col-md-offset-1 animated left-animated">Contact</h1>
     </div>
     <div class="row container-dark">
       <div class="background-full-left-dark"></div>
@@ -532,5 +529,11 @@ foreach ($feed->data as $i => $post) {
         </div>
       </div>
     </div>
-
 <?php include "footer.php" ?>
+
+<script>
+$(document).ready(function(){
+    $("#actu-container").delay(100).load( "fb_feed.php" );
+})
+
+</script>

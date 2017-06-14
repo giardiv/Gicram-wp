@@ -1,3 +1,16 @@
+$.fn.isInViewport = function() {
+    var elementTop = $(this).offset().top + 200;
+    var elementBottom = elementTop + $(this).outerHeight();
+
+    var viewportTop = $(window).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+
+    if(elementBottom > viewportTop && elementTop < viewportBottom){
+        return $(this);
+    }
+    return false;
+};
+
 $(function() {
     // Manual SS
     $(".manual-ss-controls img").click(function(){
@@ -100,6 +113,19 @@ $(function() {
             $("#menu-btn").css("right", hd['right']['to']);
             $("#header-bg").css({ opacity : hd['opacity']['to'] });
         }
+
+        $.each($(".animated"), function(){
+            if( $(this).isInViewport() ){
+                $(this).delay(600).removeClass("left-animated");
+                $(this).delay(600).removeClass(
+                    "top-animated-l-0 top-animated-2 top-animated-l-4" +
+                    "top-animated-0 top-animated-r-2 top-animated-4" +
+                    "top-animated-l-1 top-animated-3 top-animated-l-5" +
+                    "top-animated-1 top-animated-r-3 top-animated-5"
+                );
+
+            }
+        })
     })
     $("#menu-btn").click(function(){
         console.log("click");
