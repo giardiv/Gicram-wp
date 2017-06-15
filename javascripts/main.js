@@ -43,6 +43,10 @@ $(function() {
         'opacity' : {
             'from' : 0,
             'to' : 1
+        },
+        'logomargin' : {
+            'from' : 36,
+            'to' : 0
         }
     }
     function getHdValue(at){
@@ -51,21 +55,21 @@ $(function() {
     $(window).scroll(function(){
         if($(window).scrollTop() < hd['to'] &&  $(window).scrollTop() > hd['from']){
             $("#header").css("padding", getHdValue('padding') + "px 0px");
-            $("#logo img").css("height", getHdValue("height"));
+            $("#logo img").css({"height" : getHdValue("height"), "marginTop" : getHdValue("logomargin")});
             $("header nav").css("marginTop", getHdValue('marginTop'));
             $("#menu-btn").css("right", getHdValue("right"));
             $("#header-bg").css({ opacity : getHdValue("opacity") });
         }
         if($(window).scrollTop() < 3){
             $("#header").css("padding", hd['padding']['from'] + "px 0px");
-            $("#logo img").css("height", hd['height']['from']);
+            $("#logo img").css({"height" : hd['height']['from'], "marginTop" : hd['logomargin']['from']});
             $("header nav").css("marginTop", hd['marginTop']['from']);
             $("#menu-btn").css("right", hd['right']['from']);
             $("#header-bg").css({ opacity : hd['opacity']['from'] });
         }
         if($(window).scrollTop() > 300){
             $("#header").css("padding", hd['padding']['to'] + "px 0px");
-            $("#logo img").css("height", hd['height']['to']);
+            $("#logo img").css({"height" : hd['height']['to'], "marginTop" : hd['logomargin']['to']});
             $("header nav").css("marginTop", hd['marginTop']['to']);
             $("#menu-btn").css("right", hd['right']['to']);
             $("#header-bg").css({ opacity : hd['opacity']['to'] });
@@ -82,12 +86,22 @@ $(function() {
         })
     })
     $("#menu-btn").click(function(){
-        console.log("click");
         $("#header").animate({
             padding: hd['padding']['from'] + "px 0px"
         });
-        $("#logo img").animate({height: hd['height']['from'] });
+        $("#logo img").animate({"height" : hd['height']['from'], "marginTop" : hd['logomargin']['from']});
         $("header nav").animate({marginTop: hd['marginTop']['from'] });
         $("#menu-btn").animate({right: hd['right']['from'] });
+    })
+    $("#nav-sf").click(function(){
+        $("#ul-nav-sf").animate({
+            width : "175px",
+            padding : "0 20px",
+            //opacity : "0.2"
+        },300,function(){
+            $("#ul-nav-sf").animate({
+                opacity : "1"
+            },300)
+        })
     })
 });

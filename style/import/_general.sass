@@ -1,6 +1,8 @@
 // GENERAL
+$body-bg : $white-z
+
 body
-  background-color: $white-z
+  background-color: $body-bg
   width: 100%
   overflow-x: hidden
   letter-spacing: 1px
@@ -8,7 +10,7 @@ body
 .row
   margin: 0
 .container-top > .row
-  padding: 70px 0
+  padding: 0 0
   &:first-child
     padding-top: 120px
 
@@ -18,9 +20,11 @@ body
   width: 100%
   z-index: 1000
   position: relative
+  background: $almost-white-z
 #logo
   img
     height: 60px
+    margin-top: 36px
 #menu-btn
   height: 50px
   position: absolute
@@ -28,6 +32,8 @@ body
   right: -100px
   cursor: pointer
 nav
+  ul
+    margin-bottom: 0
   ul:first-child, ul
     padding: 0 20px
     li
@@ -40,7 +46,12 @@ nav
       margin-bottom: 0
   ul:last-child
     padding: 0 20px
-    border-right: 1px $black-z Solid
+    border-right: 2px $navbar-default-link-color Solid
+  #ul-nav-sf
+    width: 0
+    padding: 0
+    overflow: hidden
+    opacity: 0
 #header
   padding: 10px 0
   position: relative
@@ -95,6 +106,8 @@ ul:last-child
 .double-container
   >.double
     padding: 40px 60px
+    font-size: 12pt
+    text-align: justify
 .quad
   padding: 50px $grid-gutter-width/2
 .dark
@@ -134,20 +147,20 @@ h1
   font-weight: 700
   letter-spacing: 6px
   font-size: 92pt
-  padding: 160px 0
+  padding: 110px 0
   margin: 0
 .h1-mini
   color: $white-z
   font-size: 14pt
   text-transform: uppercase
   text-align: center
-  padding: 100px 0
+  padding: 60px 0 40px 0
   +scorer
   .text
     +scorer
 h2
   font-weight: 700
-  font-size: 52pt
+  font-size: 32pt
   small
     font-size: 18pt
 h3
@@ -164,6 +177,9 @@ h3
 h4
   font-weight: 700
   font-size: 16px
+h6
+  font-size: 10pt
+  font-weight: 300
 
 .hr-h2
   width: 100px
@@ -204,12 +220,14 @@ p
   width: 100%
   left: 0
   height: 200%
-  background: $gray-half-darker-z
+  background: $gray-z
 .background-full-vert-light
   @extend .background-full-vert
-  background: $gray-z
+  background: $white-z
 .background-gray
   background: $gray-z
+.background-body
+  background: $body-bg
 
 // COLORANCE
 .text-red, a.text-red
