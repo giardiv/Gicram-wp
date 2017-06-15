@@ -22,3 +22,25 @@
   &::after
     content: "\A –"
     white-space: pre
+
+=transition-multiple($prop...)
+  -webkit-transition: $prop
+  -moz-transition: $prop
+  -ms-transition: $prop
+  -o-transition: $prop
+  transition: $prop
+
+=transition($prop,$time)
+  -webkit-transition-duration: $time
+  -moz-transition-duration: $time
+  -o-transition-duration: $time
+  transition-duration: $time
+  -webkit-transition-property: $prop
+  -moz-transition-property: $prop
+  -o-transition-property: $prop
+  transition-property: $prop
+=transition-delay($delay)
+  -webkit-transition-delay: $delay
+  -moz-transition-delay: $delay
+  -o-transition-delay: $delay
+  transition-delay: $delay

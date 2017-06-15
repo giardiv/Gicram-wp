@@ -3,13 +3,16 @@ body
   background-color: $white-z
   width: 100%
   overflow-x: hidden
+  letter-spacing: 1px
 
 .row
   margin: 0
 .container-top > .row
   padding: 70px 0
   &:first-child
-    padding-top: 370px
+    padding-top: 120px
+
+// HEADER
 .container-header
   position: fixed
   width: 100%
@@ -27,6 +30,10 @@ body
 nav
   ul:first-child, ul
     padding: 0 20px
+    li
+      margin-top: 0
+    h5
+      margin: 5px 0
     li:first-child h5
       margin-top: 0
     li:last-child h5
@@ -35,11 +42,13 @@ nav
     padding: 0 20px
     border-right: 1px $black-z Solid
 #header
-  padding: 30px 0
+  padding: 10px 0
   position: relative
 .navbar-link
   color: $navbar-default-link-color
   font-weight: 700
+
+
 blockquote
   margin: 50px 0
   text-align: center
@@ -215,20 +224,26 @@ p
 
 // ANIMATED
 .animated
-  transition: all 0.8s
+  transition: all 0.5s
 .left-animated
   margin-left: -100px
   opacity: 0
 
-.top-animated-l-0, .top-animated-2, .top-animated-l-4
+.top-animated
   margin-top: 100px
   opacity: 0
+.top-animated-b
+  +transition-multiple(margin-top 300ms, opacity 350ms)
+  //+transition-multiple(margin-top 800ms, opacity 900ms)
+  //transition: all 0.8s
+.top-animated-l-0, .top-animated-2, .top-animated-l-4
+  @extend .top-animated-b
 .top-animated-0, .top-animated-r-2, .top-animated-4
-  margin-top: 200px
-  opacity: 0
+  @extend .top-animated-b
+  +transition-delay(100ms)
 .top-animated-l-1, .top-animated-3, .top-animated-l-5
-  margin-top: 300px
-  opacity: 0
+  @extend .top-animated-b
+  +transition-delay(200ms)
 .top-animated-1, .top-animated-r-3, .top-animated-5
-  margin-top: 400px
-  opacity: 0
+  @extend .top-animated-b
+  +transition-delay(300ms)

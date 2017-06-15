@@ -54,8 +54,10 @@ $sq-lines-to-show: 5
 
 $bg-zoom : 10px
 .square-img
+  +fuller
   background-position: center -1 * $bg-zoom
-  transition: all 0.5s
+  +transition-multiple(background-size 500ms,opacity 800ms, background-position 500ms)
+  //transition: all 0.5s
   +respond-to(lg)
     background-size: auto $container-lg / 4 + 2 * $bg-zoom
 

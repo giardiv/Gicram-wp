@@ -25,8 +25,8 @@ $(function() {
         'from' : 0,
         'to' : 300,
         'padding' : {
-            'from' : 30,
-            'to' : 10
+            'from' : 10,
+            'to' : 5
         },
         'height' : {
             'from' : 60,
@@ -71,16 +71,13 @@ $(function() {
             $("#header-bg").css({ opacity : hd['opacity']['to'] });
         }
 
-        $.each($(".animated"), function(){
+        $.each($(".animated, .top-animated-b"), function(){
+            //margin = 200;
             if( $(this).isInViewport() ){
                 $(this).delay(600).removeClass("left-animated");
                 $(this).delay(600).removeClass(
-                    "top-animated-l-0 top-animated-2 top-animated-l-4" +
-                    "top-animated-0 top-animated-r-2 top-animated-4" +
-                    "top-animated-l-1 top-animated-3 top-animated-l-5" +
-                    "top-animated-1 top-animated-r-3 top-animated-5"
+                    "top-animated"
                 );
-
             }
         })
     })

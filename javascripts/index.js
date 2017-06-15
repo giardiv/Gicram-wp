@@ -41,5 +41,8 @@ $(document).ready(function(){
       console.log(n);
       currentSlide(n);
   })
-    $("#actu-container").delay(100).load( "fb_feed.php" );
+    $("#actu-container").delay(100).load( "fb_feed.php",function(){
+      console.log("loadeeed");
+      $(window).trigger("scroll");
+    } );
 })

@@ -38,11 +38,12 @@ if(!$dev){
     } ?>
     <div class="col-md-6 half-row-square">
       <?php if(!in_array($i, array(2, 3))){ ?>
-      <div class="col-md-6 square square-img animated top-animated-l-<?php echo $i; ?>"
-      style="background-image:url(<?php echo $posts[$i]['img_url'] ?>)">
-        <a href="https://www.facebook.com/<?php echo $posts[$i]['id'] ?>" target="_blank" class="full-a"></a>
+      <div class="col-md-6 square top-animated top-animated-b top-animated-l-<?php echo $i; ?>">
+        <div class="square-img" style="background-image:url(<?php echo $posts[$i]['img_url'] ?>)">
+          <a href="https://www.facebook.com/<?php echo $posts[$i]['id'] ?>" target="_blank" class="full-a"></a>
+        </div>
       </div><?php } ?>
-      <div class="col-md-6 square square-text animated top-animated-<?php echo $i; ?>">
+      <div class="col-md-6 square square-text top-animated top-animated-b  top-animated-<?php echo $i; ?>">
         <div class="square-top">
           21.01.2017
           <span class="plus">
@@ -56,8 +57,10 @@ if(!$dev){
         </div>
       </div>
       <?php if(in_array($i, array(2, 3))){ ?>
-      <div class="col-md-6 square square-img animated top-animated-r-<?php echo $i; ?>" style="background-image:url(<?php echo $posts[$i]['img_url'] ?>)">
-        <a href="https://www.facebook.com/<?php echo $posts[$i]['id'] ?>" target="_blank" class="full-a"></a>
+      <div class="col-md-6 square top-animated top-animated-b top-animated-r-<?php echo $i; ?>">
+        <div class="square-img" style="background-image:url(<?php echo $posts[$i]['img_url'] ?>)">
+          <a href="https://www.facebook.com/<?php echo $posts[$i]['id'] ?>" target="_blank" class="full-a"></a>
+        </div>
       </div><?php } ?>
     </div>
   <?php if($i % 2 != 0 ){ ?>

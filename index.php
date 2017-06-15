@@ -5,7 +5,8 @@
       <iframe id="video" src="https://player.vimeo.com/video/158933289?title=0&amp;byline=0&amp;portrait=0" class="col-md-12" height="641" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
     </div>
     <!-- Dern Ope / SS -->
-    <div class="row">
+    <div class="row container-dark">
+        <div class="background-full"></div>
       <h1 class="col-md-11 col-md-offset-1 animated left-animated">Dernières<br />Opérations</h1>
       <div class="row ss-caption">
         <div class="row active">

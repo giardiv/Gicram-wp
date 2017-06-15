@@ -22,7 +22,7 @@
     <!-- Header -->
     <header class="row" id="header">
       <div id="logo" class="col-md-6">
-        <a href="#"><img src="images/LogoGicram-Fond-transp-705x191.png" alt="Gicram" /></a>
+        <a href="/"><img src="images/LogoGicram-Fond-transp-705x191.png" alt="Gicram" /></a>
       </div>
       <nav class="col-md-6 ">
         <ul class="pull-right list-unstyled">
