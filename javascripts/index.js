@@ -11,7 +11,7 @@ $(document).ready(function(){
   }
   function showSlides(n){
     var i;
-    var slides = document.getElementsByClassName("item");
+    var slides = document.getElementsByClassName("item-z");
     var dots = document.getElementsByClassName("dot");
     if (n > slides.length) {slideIndex = 1}
     if (n < 1) {slideIndex = slides.length}
@@ -45,4 +45,24 @@ $(document).ready(function(){
       console.log("loadeeed");
       $(window).trigger("scroll");
     } );
+
+  $(".carousel-v").click(function(){
+    $(".carousel-v").carousel('pause');
+  })
+  $('.carousel-v').carousel({
+    interval: 6000,
+    pause: "click"
+  })
+  activePlayer = null
+  $(".carousel-v .carousel-caption").click(function(){
+    $(this).fadeOut();
+    console.log( '>>> #video-ss-' + $(this).data("id") );
+    activePlayer = new Vimeo.Player($('#video-ss-'+$(this).data("id")));
+    activePlayer.play();
+  })
+  $(".carousel-v .carousel-control").click(function(){
+    if(activePlayer){
+      activePlayer.pause();
+    }
+  })
 })

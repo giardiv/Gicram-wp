@@ -94,6 +94,7 @@ $(function() {
         $("#menu-btn").animate({right: hd['right']['from'] });
     })
     $("#nav-sf").click(function(){
+      if($("#ul-nav-sf").css("opacity") == 0){
         $("#ul-nav-sf").animate({
             width : "175px",
             padding : "0 20px",
@@ -103,5 +104,16 @@ $(function() {
                 opacity : "1"
             },300)
         })
+        }else{
+            $("#ul-nav-sf").animate({
+                opacity : "0"
+            },300,function(){
+                $("#ul-nav-sf").animate({
+                    width : "0px",
+                    padding : "0px",
+                    //opacity : "0.2"
+                },300)
+            })
+        }
     })
 });

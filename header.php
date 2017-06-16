@@ -27,13 +27,13 @@
       <nav class="col-md-6 ">
         <ul class="pull-right list-unstyled" id="ul-nav-sf">
           <li>
-            <h5><small><a href="#" class="navbar-link">PARCES D'ACTIVITÉS</a></small></h5>
+            <h5><small><a href="parcact.php" class="navbar-link">PARCS D'ACTIVITÉS</a></small></h5>
           </li>
             <li>
-              <h5><small><a href="#" class="navbar-link">PARCES LOGISTIQUES</a></small></h5>
+              <h5><small><a href="parclog.php" class="navbar-link">PARCS LOGISTIQUES</a></small></h5>
             </li>
           <li>
-            <h5><small><a href="#" class="navbar-link">BUREAUX</a></small></h5>
+            <h5><small><a href="bureaux.php" class="navbar-link">BUREAUX</a></small></h5>
           </li>
         </ul>
         <ul class="text-right pull-right list-unstyled">
@@ -47,16 +47,16 @@
             <h5><small><a href="philo.php" class="navbar-link">NOTRE PHILOSOPHIE</a></small></h5>
           </li>
           <li>
-            <h5><small><a href="#" id="nav-sf" class="navbar-link">SAVOIR FAIRE</a></small></h5>
+            <h5><small><a href="#!" id="nav-sf" class="navbar-link">SAVOIR FAIRE</a></small></h5>
           </li>
           <li>
             <h5><small><a href="enga.php" class="navbar-link">NOS ENGAGEMENTS</a></small></h5>
           </li>
           <li>
-            <h5><small><a href="#" class="navbar-link">OFFRES & PROGRAMMES</a></small></h5>
+            <h5><small><a href="offre.php" class="navbar-link">OFFRES & PROGRAMMES</a></small></h5>
           </li>
           <li>
-            <h5><small><a href="#" class="navbar-link">CONTACT</a></small></h5>
+            <h5><small><a href="contact.php" class="navbar-link">CONTACT</a></small></h5>
           </li>
         </ul>
       </nav>

@@ -1,5 +1,6 @@
 // CAROUSEL
 $carousel-height-ratio : 709/401
+$video-ratio : 16/9
 
 .carousel-z
   position: relative
@@ -88,6 +89,35 @@ $carousel-height-ratio : 709/401
   animation-duration: 1s
   animation-fill-mode: forwards
   background-position: right center
+
+.carousel-v
+  @extend .carousel-z
+  .carousel-inner
+    width: 70%
+    margin-left: 15%
+    position: relative
+    .inner
+      position: relative
+    .carousel-caption
+      +fuller
+      margin: 0
+      padding: 0
+      z-index: 300
+      .bg-white
+        opacity: 0.4
+        background: $almost-white-z
+        +fuller
+      .caption-text
+        position: absolute
+        right: 70px
+        top: 40px
+
+  .video-ss
+    +respond-to(lg)
+      width: 0.7 * $container-lg - 40
+      height: (0.7 * $container-lg - 40) / $video-ratio
+      position: relative
+      z-index: 290
 
 @-webkit-keyframes widther
   from

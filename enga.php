@@ -15,7 +15,7 @@
   <br/><br />
   </blockquote>
 </div>
-<div class="row">
+<div class="row padder-1">
   <img src="images/group.jpg" class="col-md-10 col-md-offset-1" />
 </div>
 <!-- Double col -->
@@ -91,7 +91,7 @@ et copilote de la commission « Développement durable » d’Afilog</b>
     </blockquote>
     </div>
     <div class="row container-dark double-container">
-      <h1 class="h1-mini container-dark col-md-10 col-md-offset-1">
+      <h1 class="h1-mini container-dark col-md-8 col-md-offset-2">
         <div class="background-full"></div>
         <span class="text">Le groupe Gicram s’est fait un devoir d’intégrer ces nouvelles technologies et des matériaux performants dans tous ses modèles et typologies de bâtiments (bureaux, activités, logistique, commerce…) pour en en faire des espaces éco-responsables et éco-efficients ; la prise en compte des critères de développement durable contribuant à en limiter de facto les charges d’exploitation.</span>
       </h1>

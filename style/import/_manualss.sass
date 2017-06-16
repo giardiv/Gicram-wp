@@ -22,9 +22,7 @@ $mss-ratio : 14/6
     img
       cursor: pointer
   .manual-ss-legend
-    margin: 0 30px
-    @include respond-to(lg)
-      margin-top: 55px
+    margin: auto
     font-size: 10pt
     border-top: 2px Solid $white-z
     border-bottom: 2px Solid $white-z
@@ -35,12 +33,11 @@ $mss-ratio : 14/6
     b
       display: block
       margin-bottom: -10px
+  .manual-ss-legend-c
+    @extend .manual-ss-legend
+    margin: auto
+    border: 0
   >.col-md-9, >.col-md-3
     padding: 0
     img
       padding: 0
-
-.green-bg
-  background: $green-z
-.green-cl
-  color: $green-z
