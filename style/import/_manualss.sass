@@ -1,7 +1,10 @@
 $mss-ratio : 14/6
 
 .row-manual-ss
-  height: $container-sm / $mss-ratio
+  @include respond-to(xs)
+    height: 100vw / $mss-ratio
+  @include respond-to(sm)
+    height: $container-sm / $mss-ratio
   @include respond-to(md)
     height: $container-md / $mss-ratio
   @include respond-to(lg)
@@ -19,6 +22,10 @@ $mss-ratio : 14/6
     img
       width: 100%
   .manual-ss-controls
+    +respond-to(sm-max)
+      >div
+        margin: 0
+        padding: 0
     img
       cursor: pointer
   .manual-ss-legend

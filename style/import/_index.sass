@@ -9,6 +9,8 @@ $sq-lines-to-show: 5
 .actu-row
   +respond-to(lg)
     height: 1013px
+.square-text
+  background: $almost-white-z
 .square
   position: relative
   +respond-to(sm)
@@ -66,7 +68,7 @@ $bg-zoom : 10px
   +fuller
   background-position: center -1 * $bg-zoom
   +transition-multiple(background-size 500ms,opacity 800ms, background-position 500ms)
-  //transition: all 0.5s  
+  //transition: all 0.5s
   +respond-to(md)
     background-size: auto $container-md / 4 + 2 * $bg-zoom
   +respond-to(lg)

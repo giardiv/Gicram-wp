@@ -1,0 +1,32 @@
+// BTN
+.btn
+  border-color: $black-z
+  color: $black-z
+  background-color: transparent
+  &:hover, &:focus, &:active
+    background-color: $black-z
+    color: $white-z
+.btn-dark
+  border-color: $gray-double-darker-z
+  color: $gray-double-darker-z
+  background-color: $gray-ultra-darker-z
+  &:hover
+    background-color: $gray-double-darker-z
+    color: $gray-ultra-darker-z
+.btn-light
+  @extend .btn-dark
+  border-color: $white-z
+  color: $white-z
+  &:hover
+    background-color: $white-z
+.chill
+  padding: 12px 30px
+  letter-spacing: 5px
+  font-size: 12px
+.btn-chill
+  @extend .chill
+  color: $gray-beige
+  border-color: $gray-beige
+  &:hover
+    background-color: $gray-beige
+    border-color: $gray-beige

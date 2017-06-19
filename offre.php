@@ -3,7 +3,7 @@
 <div class="row container-dark">
   <h1 class="col-md-11 col-md-offset-1">Offres &<br />Disponibilités</h1>
 </div>
-<h1 class="h1-mini container-dark">
+<h1 class="h1-mini container-dark gray-cl">
   <span class="background-full"></span>
   <span class="text">Terrain</span>
 </h1>
@@ -31,7 +31,7 @@
             Nom du projet :<br />
             <b>Gicram</b><br />
             <div class="btn-ctn">
-              <a class="btn btn-light">
+              <a class="btn btn-light chill">
                 Contact
               </a>
             </div>
@@ -47,7 +47,7 @@
   </p>
 </div>
 
-<h1 class="h1-mini container-dark">
+<h1 class="h1-mini container-dark gray-cl">
   <span class="background-full"></span>
   <span class="text">Immeubles</span>
 </h1>
@@ -69,7 +69,7 @@
             Nom du projet :<br />
             <b>Gicram</b><br />
             <div class="btn-ctn">
-              <a class="btn btn-light">
+              <a class="btn btn-light chill">
                 Contact
               </a>
             </div>

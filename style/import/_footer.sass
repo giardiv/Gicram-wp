@@ -20,7 +20,8 @@ footer
     width: 20px
     text-align: center
   >div:first-child
-    border-right: 1px Solid $black-z
+    +respond-to(md)
+      border-right: 1px Solid $black-z
   >div:last-child
     a
       display: block

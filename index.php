@@ -34,11 +34,11 @@
         </ol>
         <!-- Wrapper for slides -->
         <div class="carousel-inner-z" role="listbox">
-          <div class="item item-z" style="background-image:url(images/foo1.jpg)">
+          <div class="item item-z" style="background-image:url(images/foo2.jpg)">
           </div>
-          <div class="item item-z" style="background-image:url(images/foo1b.jpg)">
+          <div class="item item-z" style="background-image:url(images/foo2.jpg)">
           </div>
-          <div class="item item-z" style="background-image:url(images/foo1c.jpg)">
+          <div class="item item-z" style="background-image:url(images/foo2.jpg)">
           </div>
         </div>
         <!-- Controls -->

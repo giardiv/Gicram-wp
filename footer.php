@@ -37,7 +37,7 @@
           info@gicram.com
         </span>
       </div>
-      <div class="background-full"></div>
+      <div class="background-full-dark"></div>
       <div class="col-md-2">
         <a href="#">
           <img src="#" class="login-img" />

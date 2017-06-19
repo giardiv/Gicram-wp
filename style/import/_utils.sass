@@ -2,7 +2,18 @@
 .not-mob
   +respond-to(sm-max)
     display: none
-.col-stick-top
+.col-stick-top, .triple-container>.col-stick-top
   padding-bottom: 0
-.col-stick-bottom
+.col-stick-bottom, .triple-container>.col-stick-bottom
   padding-top: 0
+
+.container-order-mob
+  +respond-to(sm-max)
+    display: flex
+    flex-flow: column
+    .order-1
+      order: 1
+    .order-2
+      order: 2
+    .order-3
+      order: 3

@@ -98,20 +98,20 @@
         <h2>Sonepar <small class="green-cl">23444m<sup>2</sup></small></h2>
       </div>
       <div class="row row-manual-ss green-bg">
-        <div class="col-md-9 manual-ss">
+        <div class="col-md-9 col-xs-12 manual-ss">
           <div class="manual-ss-img" style="background-image:url(images/park.jpg)"></div>
           <div class="manual-ss-img" style="background-image:url(images/park1.jpg)"></div>
           <div class="manual-ss-img" style="background-image:url(images/park2.jpg)"></div>
           <div class="manual-ss-img" style="background-image:url(images/park3.jpg)"></div>
         </div>
-        <div class="col-md-3 manual-ss-controls">
-          <div class="row">
-            <img data-to="1" src="images/park.jpg" class="col-md-6" />
-            <img data-to="2" src="images/park1.jpg" class="col-md-6" />
+        <div class="col-md-3 col-xs-12 manual-ss-controls">
+          <div class="row col-md-12 col-xs-6">
+            <img data-to="1" src="images/park.jpg" class="col-md-6 col-xs-6" />
+            <img data-to="2" src="images/park1.jpg" class="col-md-6 col-xs-6" />
           </div>
-          <div class="row">
-            <img data-to="3" src="images/park2.jpg" class="col-md-6" />
-            <img data-to="4" src="images/park3.jpg" class="col-md-6" />
+          <div class="row col-md-12 col-xs-6">
+            <img data-to="3" src="images/park2.jpg" class="col-md-6 col-xs-6" />
+            <img data-to="4" src="images/park3.jpg" class="col-md-6 col-xs-6" />
           </div>
           <div class="row">
             <div class="center-legend">

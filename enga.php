@@ -16,12 +16,12 @@
   </blockquote>
 </div>
 <div class="row padder-1">
-  <img src="images/group.jpg" class="col-md-10 col-md-offset-1" />
+  <img src="images/group.jpg" class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1" />
 </div>
 <!-- Double col -->
   <div class="row container-dark">
-    <h1 class="h1-mini container-dark">
-      <span class="background-full"></span>
+    <h1 class="h1-mini container-dark gray-beige-cl">
+      <span class="background-full-dark"></span>
       <span class="text">Nos garanties</span>
     </h1>
     <div class="row container-dark double-container">
@@ -78,8 +78,8 @@
       </div>
     </div>
     <div class="row container-dark double-container">
-    <h1 class="h1-mini container-dark">
-      <div class="background-full"></div>
+    <h1 class="h1-mini container-dark gray-beige-cl">
+      <div class="background-full-dark"></div>
       <span class="text">Certifications<br />environnementales</span>
     </h1>
     <blockquote class="col-md-10 col-md-offset-1 pointed">
@@ -91,9 +91,9 @@ et copilote de la commission « Développement durable » d’Afilog</b>
     </blockquote>
     </div>
     <div class="row container-dark double-container">
-      <h1 class="h1-mini container-dark col-md-8 col-md-offset-2">
-        <div class="background-full"></div>
-        <span class="text">Le groupe Gicram s’est fait un devoir d’intégrer ces nouvelles technologies et des matériaux performants dans tous ses modèles et typologies de bâtiments (bureaux, activités, logistique, commerce…) pour en en faire des espaces éco-responsables et éco-efficients ; la prise en compte des critères de développement durable contribuant à en limiter de facto les charges d’exploitation.</span>
+      <h1 class="h1-mini container-dark col-md-8 col-md-offset-2 gray-beige-cl">
+        <div class="background-full-dark"></div>
+        <span class="text">Le groupe Gicram s’est fait un devoir d’intégrer ces nouvelles technologies et des matériaux performants dans tous ses modèles et typologies de bâtiments (bureaux, activités, logistique, commerce…) pour en en faire des espaces éco-responsables et éco-efficients ; la prise en compte des critères de développement durable contribuant à en limiter de facto <br />les charges d’exploitation.</span>
       </h1>
       <div class="col-md-6 double">
         <h4 class="h4-under">Nous mettons donc chaque jour en application les exigences d’aujourd’hui qui seront à n’en pas douter les normes de demain :</h4>
@@ -127,8 +127,8 @@ et copilote de la commission « Développement durable » d’Afilog</b>
         </p>
       </div>
     </div>
-    <h1 class="h1-mini container-dark">
-      <div class="background-full"></div>
+    <h1 class="h1-mini container-dark gray-beige-cl ">
+      <div class="background-full-dark"></div>
       <span class="text">14 CIBLES HQE</span></h1>
     <div class="row container-dark">
       <div class="background-full-left"></div>
@@ -186,8 +186,8 @@ et copilote de la commission « Développement durable » d’Afilog</b>
       </div>
     </div>
   </div>
-  <h1 class="h1-mini container-dark">
-    <div class="background-full"></div>
+  <h1 class="h1-mini container-dark gray-beige-cl">
+    <div class="background-full-dark"></div>
     <span class="text">+ 2 CIBLES AFILOG</span>
   </h1>
   <div class="row triple-container container-dark">
@@ -205,7 +205,7 @@ et copilote de la commission « Développement durable » d’Afilog</b>
 
     <div class="col-md-4 triple-img-container">
       <div class="btn-ctn">
-             <a class="top-1 center-block btn btn-primary" >En savoir plus</a>
+             <a class="top-1 center-block btn btn-primary btn-chill" >En savoir plus</a>
            </div>
       <h6 class="text-center">
         Applicables aux bâtiments tertiaires : « Référentiel NF Bâtiments tertiaires – Démarche HQE® »<br />
