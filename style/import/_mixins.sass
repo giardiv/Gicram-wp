@@ -5,10 +5,12 @@
     @media (min-width: $screen-md) {@content}
   @else if $media == sm
     @media (min-width: $screen-sm) {@content}
+  @else if $media == sm-max
+    @media (max-width: $screen-md) {@content}
   @else if $media == xs
-    @media (min-width: $screen-xs) {@content}
-  @else if $media == xxs
-    @media (max-width: $screen-xs - 1) {@content}
+    @media (min-width: 100px) {@content}
+  @else if $media == xs-max
+    @media (max-width: $screen-sm - 1) {@content}
 
 =fuller
   position: absolute

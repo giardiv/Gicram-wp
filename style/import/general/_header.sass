@@ -1,0 +1,86 @@
+// HEADER
+.container-header
+  position: fixed
+  width: 100%
+  z-index: 1000
+  position: relative
+  background: $almost-white-z
+#logo
+  img
+    height: 60px
+    margin-top: 36px
+    +respond-to(xs-max)
+      height: 40px
+      margin-top: 0
+.menu-btn
+  height: 50px
+  position: absolute
+  top: 0
+  right: -100px
+  cursor: pointer
+  +transition-multiple(right 300ms)
+  +respond-to(xs-max)
+    top: 6px
+    right: 0
+.menu-btn-hidden
+  +respond-to(xs-max)
+    right: -100px
+.close-menu-btn
+  @extend .menu-btn
+  +transition-multiple(right 300ms)
+  right: 6px
+  +respond-to(sm)
+    display: none
+.close-menu-btn-hidden
+  +respond-to(xs-max)
+    right: -100px
+.menu-bg
+  +fuller
+  position: fixed
+  background: $gray-darker-z
+  opacity: 1
+  z-index: 200
+  left: 0
+  +transition-multiple(left 300ms)
+.menu-bg-hidden
+  left: 100vw
+#header .nav-show
+  +transition-multiple(right 300ms)
+  right: 10px
+#header nav
+  +respond-to(xs-max)
+    display: block
+    position: absolute
+    top: 80px
+    right: -100vw
+    padding: 0
+    .navbar-link
+      font-size: 18pt
+  ul
+    margin-bottom: 0
+  ul:first-child, ul
+    padding: 0 20px
+    li
+      margin-top: 0
+    h5
+      margin: 5px 0
+    li:first-child h5
+      margin-top: 0
+    li:last-child h5
+      margin-bottom: 0
+  ul:first-child
+    margin-top: 41px
+  ul:last-child
+    padding: 0 20px
+    border-right: 2px $navbar-default-link-color Solid
+  #ul-nav-sf
+    width: 0
+    padding: 0
+    overflow: hidden
+    opacity: 0
+#header
+  padding: 10px 0
+  position: relative
+.navbar-link
+  color: $navbar-default-link-color
+  font-weight: 700

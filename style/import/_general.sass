@@ -17,51 +17,7 @@ body
   &:first-child
     padding-top: 150px
 
-// HEADER
-.container-header
-  position: fixed
-  width: 100%
-  z-index: 1000
-  position: relative
-  background: $almost-white-z
-#logo
-  img
-    height: 60px
-    margin-top: 36px
-#menu-btn
-  height: 50px
-  position: absolute
-  top: 0
-  right: -100px
-  cursor: pointer
-nav
-  ul
-    margin-bottom: 0
-  ul:first-child, ul
-    padding: 0 20px
-    li
-      margin-top: 0
-    h5
-      margin: 5px 0
-    li:first-child h5
-      margin-top: 0
-    li:last-child h5
-      margin-bottom: 0
-  ul:last-child
-    padding: 0 20px
-    border-right: 2px $navbar-default-link-color Solid
-  #ul-nav-sf
-    width: 0
-    padding: 0
-    overflow: hidden
-    opacity: 0
-#header
-  padding: 10px 0
-  position: relative
-.navbar-link
-  color: $navbar-default-link-color
-  font-weight: 700
-
+@import "general/_header.sass"
 
 blockquote
   margin: 50px 0
@@ -87,6 +43,12 @@ ul
 ul:last-child
   margin-bottom: 0
 
+.full-mob
+  +respond-to(xs-max)
+    padding-left: 0
+    padding-right: 0
+    margin-left: 0
+    margin-right: 0
 .full-a
   position: absolute
   width: 100%
@@ -148,6 +110,8 @@ address
   text-align: center
   strong
     text-transform: uppercase
+textarea
+  resize: vertical
 
 // BTN
 .btn
@@ -175,9 +139,12 @@ address
 h1
   font-weight: 700
   letter-spacing: 6px
-  font-size: 92pt
   padding: 110px 0
   margin: 0
+  +respond-to(xs)
+    font-size: 46pt
+  +respond-to(md)
+    font-size: 92pt
 .h1-mini
   color: $white-z
   font-size: 14pt
@@ -189,7 +156,10 @@ h1
     +scorer
 h2
   font-weight: 700
-  font-size: 32pt
+  +respond-to(xs)
+    font-size: 24pt
+  +respond-to(md)
+    font-size: 32pt
   small
     font-size: 18pt
 h3
@@ -222,64 +192,8 @@ h6
 p
   font-size: 12pt
 
-// DARKANCE
-.container-dark
-  position: relative
-  >*
-    position: relative
-.container-dark-vert
-  @extend .container-dark
-  overflow-y: hidden
-.background-full
-  position: absolute
-  width: 200%
-  left: -50%
-  top: 0
-  height: 100%
-  background: $gray-half-darker-z
-.background-full-left
-  @extend .background-full
-  width: 100%
-  background: $gray-z
-.background-full-left-dark
-  @extend .background-full-left
-  background: $gray-ultra-darker-z
-.background-full-right
-  @extend .background-full-left
-  left: 50%
-.background-full-vert
-  @extend .background-full
-  width: 100%
-  left: 0
-  height: 200%
-  background: $gray-z
-.background-full-vert-light
-  @extend .background-full-vert
-  background: $white-z
-.background-gray
-  background: $gray-z
-.background-body
-  background: $body-bg
-
-// COLORANCE
-.text-red, a.text-red
-  color: $red-z
-.almost-white
-  background: $almost-white-z
-.green-bg
-  background: $green-z
-.green-cl
-  color: $green-z
-.blue-bg
-  background: $blue-z
-.blue-cl
-  color: $blue-z
-.red-bg
-  background: $red-z
-.red-cl
-  color: $red-z
-.gray-bg
-  background: $gray-z-2
+@import "general/_darkance.sass"
+@import "general/_colorance.sass"
 
 // MINI CLASS
 .h1-mini .no-after, .no-after

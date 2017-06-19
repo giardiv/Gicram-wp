@@ -11,6 +11,10 @@ $sq-lines-to-show: 5
     height: 1013px
 .square
   position: relative
+  +respond-to(sm)
+    height: $container-sm / 2
+  +respond-to(md)
+    height: $container-md / 4
   +respond-to(lg)
     height: $container-lg / 4
   padding: 20px
@@ -24,7 +28,7 @@ $sq-lines-to-show: 5
     display: block
     display: -webkit-box
     max-width: 400px
-    height: $sq-font-size*$sq-line-height*$sq-lines-to-show
+    height: $sq-font-size * $sq-line-height * $sq-lines-to-show
     margin: 0 auto
     font-size: $sq-font-size
     line-height: $sq-line-height
@@ -52,6 +56,8 @@ $sq-lines-to-show: 5
       .square-img
         background-position: center 0
         opacity: 0.8
+        +respond-to(md)
+          background-size: auto $container-md / 4
         +respond-to(lg)
           background-size: auto $container-lg / 4
 
@@ -60,7 +66,9 @@ $bg-zoom : 10px
   +fuller
   background-position: center -1 * $bg-zoom
   +transition-multiple(background-size 500ms,opacity 800ms, background-position 500ms)
-  //transition: all 0.5s
+  //transition: all 0.5s  
+  +respond-to(md)
+    background-size: auto $container-md / 4 + 2 * $bg-zoom
   +respond-to(lg)
     background-size: auto $container-lg / 4 + 2 * $bg-zoom
 
@@ -95,5 +103,11 @@ $bg-zoom : 10px
     transition: all 0.5s
 
 #video
+  +respond-to(xs)
+    height: 100vw / $ratio-video
+  +respond-to(sm)
+    height: $container-sm / $ratio-video
+  +respond-to(md)
+    height: $container-md / $ratio-video
   +respond-to(lg)
     height: $container-lg / $ratio-video

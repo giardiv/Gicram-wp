@@ -1,20 +1,20 @@
 <?php include "header.php" ?>
 <!-- Image Only -->
 <div class="row padder-1">
-  <img src="images/group.jpg" class="col-md-10 col-md-offset-1" />
+  <img src="images/group.jpg" class="col-sm-10 col-sm-offset-1 col-xs-12" />
 </div>
 <div class="row container-dark">
   <div class="background-full"></div>
-  <h1 class="col-md-11 col-md-offset-1">Le Groupe<br />Gicram</h1>
+  <h1 class="col-sm-11 col-sm-offset-1">Le Groupe<br />Gicram</h1>
 </div>
 <div class="row">
   <h3>Gicram Groupe</h3>
   <div id="container-group" class="row">
     <div class="row">
-      <div class="col-md-3 group-img-1">
+      <div class="col-md-3 col-md-offset-0 group-img-1 col-xs-8 col-xs-offset-2">
         <img src="images/group.jpg"/>
       </div>
-      <div class="col-md-8 col-md-offset-1 group-text-1">
+      <div class="col-md-8 col-md-offset-1 group-text-1 col-sm-8 col-sm-offset-2 col-xs-12 ">
         <div class="text">
           <span class="commated"><pre>    </pre>C’est l’histoire des savoir-faire et de la richesse des personnalités qui l’ont construites jour après jour depuis plus de 40 ans : depuis ses fondateurs historiques jusqu’aux experts de tous corps qui les ont rejoints au fil des années. Grâce à leur réactivité, leur sérieux et leur professionnalisme, tous apportent leur propre contribution à ce bel édifice.<br />
           Avec nos équipes étroitement associées et impliquées dans chaque projet, nous avons aujourd’hui à cœur d’être les artisans de votre propre aventure entrepreneuriale.
@@ -29,14 +29,14 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-8 group-text-3">
+      <div class="col-md-8 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12 group-text-3">
         <span>Grâce à plus de 40 ans d’expérience dans le domaine de l’immobilier d’entreprise, le groupe GICRAM doit son efficacité à ses équipes pluridisciplinaires qui maîtrisent toutes les connaissances et interventions nécessaires pour la construction et le développement de bâtiments, immeubles ou parcs <u>tertiaires</u>, <u>industriels</u> ou <u>logistiques</u></span>
       </div>
     </div>
   </div>
 </div>
 <div class="row container-dark">
-  <div class="background-full"></div>
+  <div class="background-full "></div>
   <div class="row row-group">
     <div class="col-md-5 col-md-offset-1">
       <div>

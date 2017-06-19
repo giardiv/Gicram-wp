@@ -8,6 +8,10 @@ $video-ratio : 16/9
 .carousel-z .item img
   width: 100%
 .carousel-inner-z
+  +respond-to(xs-max)
+    width: 100%
+    margin-left: 0
+    height: 100vw / $carousel-height-ratio
   width: 70%
   margin-left: 15%
   position: relative
@@ -16,6 +20,12 @@ $video-ratio : 16/9
     position: absolute
     width: 100%
     height: 100%
+    +respond-to(xs-max)
+      background-size: auto 100vw / $carousel-height-ratio
+    +respond-to(sm)
+      background-size: auto (0.7*($container-sm - $grid-gutter-width)) / $carousel-height-ratio
+    +respond-to(md)
+      background-size: auto (0.7*($container-md - $grid-gutter-width)) / $carousel-height-ratio
     +respond-to(lg)
       background-size: auto (0.7*($container-lg - $grid-gutter-width)) / $carousel-height-ratio
     background-position: left center
@@ -44,7 +54,7 @@ $video-ratio : 16/9
     font-weight: 700
     font-size: 12pt
     letter-spacing: 6pt
-
+    margin-bottom: 30px
 .ss-caption
   position: relative
   >.row
@@ -93,6 +103,9 @@ $video-ratio : 16/9
 .carousel-v
   @extend .carousel-z
   .carousel-inner
+    +respond-to(xs-max)
+      width: 100%
+      margin-left: 0
     width: 70%
     margin-left: 15%
     position: relative
@@ -113,11 +126,21 @@ $video-ratio : 16/9
         top: 40px
 
   .video-ss
+    position: relative
+    z-index: 290
+    +respond-to(xs-max)
+      width: 100vw
+      height: 100vw / $video-ratio
+    +respond-to(sm)
+      width: 0.7 * $container-sm - 40
+      height: (0.7 * $container-sm - 40) / $video-ratio
+    +respond-to(md)
+      width: 0.7 * $container-md - 40
+      height: (0.7 * $container-md - 40) / $video-ratio
     +respond-to(lg)
       width: 0.7 * $container-lg - 40
       height: (0.7 * $container-lg - 40) / $video-ratio
-      position: relative
-      z-index: 290
+
 
 @-webkit-keyframes widther
   from

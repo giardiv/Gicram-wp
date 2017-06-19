@@ -17,14 +17,15 @@
   <![endif]-->
 </head>
 <body>
+  <div class="menu-bg menu-bg-hidden"></div>
   <div class="container container-header" style="position:fixed">
     <div class="background-full almost-white" id="header-bg" style="opacity:0"></div>
     <!-- Header -->
     <header class="row" id="header">
-      <div id="logo" class="col-md-6">
+      <div id="logo" class="col-sm-6">
         <a href="/"><img src="images/LogoGicram-Fond-transp-705x191.png" alt="Gicram" /></a>
       </div>
-      <nav class="col-md-6 ">
+      <nav class="col-sm-6">
         <ul class="pull-right list-unstyled" id="ul-nav-sf">
           <li>
             <h5><small><a href="parcact.php" class="navbar-link">PARCS D'ACTIVITÉS</a></small></h5>
@@ -47,7 +48,7 @@
             <h5><small><a href="philo.php" class="navbar-link">NOTRE PHILOSOPHIE</a></small></h5>
           </li>
           <li>
-            <h5><small><a href="#!" id="nav-sf" class="navbar-link">SAVOIR FAIRE</a></small></h5>
+            <h5><small><a href="#!" id="nav-sf" class="navbar-link no-abort">SAVOIR FAIRE</a></small></h5>
           </li>
           <li>
             <h5><small><a href="enga.php" class="navbar-link">NOS ENGAGEMENTS</a></small></h5>
@@ -60,9 +61,10 @@
           </li>
         </ul>
       </nav>
-      <img src="images/menu.svg" id="menu-btn" />
+      <img src="images/menu.svg" id="menu-btn" class="menu-btn" />
+      <img src="images/menu.svg" class="close-menu-btn close-menu-btn-hidden" />
     </header>
   </div>
 
 
-    <div class="container container-top">
+    <div class="container container-top full-mob">

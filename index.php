@@ -2,13 +2,13 @@
     <!-- Video -->
     <div class="row container-dark">
         <div class="background-full almost-white"></div>
-      <iframe id="video" src="https://player.vimeo.com/video/158933289?title=0&amp;byline=0&amp;portrait=0" class="col-md-12" height="641" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+      <iframe id="video" src="https://player.vimeo.com/video/158933289?title=0&amp;byline=0&amp;portrait=0" class="col-md-12 col-sm-12 col-xs-12 full-mob" height="641" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
     </div>
     <!-- Dern Ope / SS -->
     <div class="row container-dark padder-1">
         <div class="background-full"></div>
       <h1 class="col-md-11 col-md-offset-1 animated left-animated">Dernières<br />Opérations</h1>
-      <div class="row ss-caption">
+      <div class="row ss-caption ss-caption-z">
         <div class="row active">
           <h2>Bolloré Logistics 1</h2>
           <hr class="hr-h2 " align="left" />
@@ -69,6 +69,23 @@
       <h1 class="col-md-11 col-md-offset-1 animated left-animated">Nos clients<br />Témoignent</h1>
     </div>
      <div class="row">
+       <div class="row ss-caption">
+         <div class="row active">
+           <h2>Bolloré Logistics 1</h2>
+           <hr class="hr-h2 " align="left" />
+           <h3 class="carousel-caption-z">2017 - lieux - date - nombre</h3>
+         </div>
+         <div class="row hide-caption">
+           <h2>Bolloré Logistics 2</h2>
+           <hr class="hr-h2 " align="left" />
+           <h3 class="carousel-caption-z">2017 - lieux - date - nombre</h3>
+         </div>
+         <div class="row hide-caption">
+           <h2>Bolloré Logistics 3</h2>
+           <hr class="hr-h2 " align="left" />
+           <h3 class="carousel-caption-z">2017 - lieux - date - nombre</h3>
+         </div>
+       </div>
       <div id="carousel-example-generic" class="carousel slide carousel-v" data-ride="carousel">
           <!-- Indicators -->
           <ol class="carousel-indicators">
@@ -115,7 +132,7 @@
     </div>
 
 
-    <div class="row">
+    <!--div class="row">
       <h1 class="h1-mini container-dark">
         <span class="background-full"></span>
         <span class="text">Gicram  la force de plus de 40 ans d’expérience,<br />
@@ -136,7 +153,7 @@
           <img src="images/foo1.jpg"/ />
         </div>
       </div>
-    </div>
+    </div-->
 
 <?php include "footer.php" ?>
 <script src="https://player.vimeo.com/api/player.js"></script>

@@ -27,9 +27,9 @@ $(document).ready(function(){
     slides[slideIndex-1].className += " c-shower";
     //slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
-    $(".ss-caption .active").removeClass("active").addClass("hide-caption");
-    console.log(".ss-caption .row:nth-child("+ (slideIndex) + ")");
-    $(".ss-caption .row:nth-child("+ (slideIndex) + ")").removeClass("hide-caption").addClass("active");
+    $(".ss-caption-z .active").removeClass("active").addClass("hide-caption");
+    console.log(".ss-caption-z .row:nth-child("+ (slideIndex) + ")");
+    $(".ss-caption-z .row:nth-child("+ (slideIndex) + ")").removeClass("hide-caption").addClass("active");
   }
 
   $('[data-ride="carousel-gicram"]').children(".carousel-control").click(function(){
@@ -41,10 +41,22 @@ $(document).ready(function(){
       console.log(n);
       currentSlide(n);
   })
-    $("#actu-container").delay(100).load( "fb_feed.php",function(){
-      console.log("loadeeed");
-      $(window).trigger("scroll");
-    } );
+    // $("#actu-container").delay(100).load( "fb_feed.php",function(){
+    //   console.log("loadeeed");
+    //   $(window).trigger("scroll");
+    // } );
+
+    xhr = $.ajax({
+            url: 'fb_feed.php',
+            success: function(data){
+              $("#actu-container").html(data);
+              $(window).trigger("scroll");
+            }
+          });
+
+    $("a:not(.no-abort)").click(function(){
+      xhr.abort();
+    });
 
   $(".carousel-v").click(function(){
     $(".carousel-v").carousel('pause');
