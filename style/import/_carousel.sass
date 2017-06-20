@@ -5,6 +5,8 @@ $video-ratio : 16/9
 .carousel-z
   position: relative
   margin-bottom: 80px
+  +respond-to(xs-max)
+    margin-bottom: 90px
 .carousel-z .item img
   width: 100%
 .carousel-inner-z
@@ -33,6 +35,9 @@ $video-ratio : 16/9
     background-repeat: no-repeat
 .carousel-control.left, .carousel-control.right
   background: transparent
+  +respond-to(xs-max)
+    height: 92px
+    top: 100%
   .carousel-arrow
     top : 50%
     position: absolute
@@ -42,6 +47,8 @@ $video-ratio : 16/9
     text-shadow: none
 .carousel-indicators
   bottom: -40px
+  +respond-to(xs-max)
+    bottom: -65px
   li
     border-color: $black-z
     margin: 0 10px
@@ -55,6 +62,8 @@ $video-ratio : 16/9
     font-size: 12pt
     letter-spacing: 6pt
     margin-bottom: 30px
+    +respond-to(sm-max)
+      font-size: 9pt
 .ss-caption
   position: relative
   >.row
@@ -62,6 +71,15 @@ $video-ratio : 16/9
     bottom: 0
     &:first-child
       position: relative
+    +respond-to(sm-max)
+      >*
+        padding-left: 30px
+      >h2
+        margin: 30px 0
+      >hr
+        margin: 0 30px
+      >h3
+        margin: 20px 0 35px 0
 .ss-caption .active
   -webkit-animation-name: captioner
   -webkit-animation-duration: 1.2s

@@ -2,12 +2,21 @@
 h1
   font-weight: 700
   letter-spacing: 6px
-  padding: 110px 0
   margin: 0
   +respond-to(xs)
-    font-size: 46px
+    font-size: 48px
+    padding: 55px 30px 40px 30px
   +respond-to(md)
     font-size: 92px
+    padding: 110px 0
+.hr-h1-xs
+  +respond-to(sm)
+    display: none
+  +respond-to(xs)
+    width: 190px
+    margin: auto
+    margin-bottom: 40px
+    border-top: 1px SOlid $gray-ultra-darker-z
 .h1-mini
   color: $white-z
   font-size: 14px

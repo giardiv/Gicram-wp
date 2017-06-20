@@ -58,6 +58,8 @@ $sq-lines-to-show: 5
       .square-img
         background-position: center 0
         opacity: 0.8
+        +respond-to(sm)
+          background-size: auto $container-sm / 2
         +respond-to(md)
           background-size: auto $container-md / 4
         +respond-to(lg)
@@ -69,6 +71,8 @@ $bg-zoom : 10px
   background-position: center -1 * $bg-zoom
   +transition-multiple(background-size 500ms,opacity 800ms, background-position 500ms)
   //transition: all 0.5s
+  +respond-to(sm)
+    background-size: auto $container-sm / 2 + 2 * $bg-zoom
   +respond-to(md)
     background-size: auto $container-md / 4 + 2 * $bg-zoom
   +respond-to(lg)

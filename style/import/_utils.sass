@@ -7,6 +7,13 @@
 .col-stick-bottom, .triple-container>.col-stick-bottom
   padding-top: 0
 
+.padder-xs-0
+  +respond-to(xs-max)
+    padding: 0
+.padder-xs-1-bot, .container-top>.padder-xs-1-bot
+  +respond-to(xs-max)
+    padding-top: 0
+    padding-bottom: 25px
 .container-order-mob
   +respond-to(sm-max)
     display: flex
