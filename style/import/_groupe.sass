@@ -14,19 +14,22 @@
         position: relative
         display: block
         &::before
-          content: "\""
+          font-family: Georgia
+          content: "\“"
           color: $blue-z
           font-size: 64pt
           position: absolute
           margin-top: -30px
+          margin-left: -40px
         &::after
           @extend .commated::before
           //left: 100%
+          content: "\”"
           text-align: right
           float: right
           width: 100%
-          margin-top: -80px
-          margin-left: 20px
+          margin-top: -60px
+          margin-left: 40px
       .text
         padding: 0px 40px
         +respond-to(xs-max)
@@ -52,10 +55,10 @@
 .row-group
   >div
     padding: 40px
-    +respond-to(lg)
-      height: 890px
     +respond-to(md)
       height: 1135px
+    +respond-to(lg)
+      height: 936px
     >div
       background: $white-z
       padding: 40px 50px

@@ -1,14 +1,16 @@
-$mss-ratio : 14/6
+$mss-ratio : 696/392
 
 .row-manual-ss
+  +respond-to(md)
+    overflow: hidden
   @include respond-to(xs)
     height: 100vw / $mss-ratio
   @include respond-to(sm)
     height: $container-sm / $mss-ratio
   @include respond-to(md)
-    height: $container-md / $mss-ratio
+    height: $container-md * 0.75 / $mss-ratio
   @include respond-to(lg)
-    height: $container-lg / $mss-ratio
+    height: $container-lg * 0.75 / $mss-ratio
   .manual-ss
     position: relative
     height: 100%
@@ -22,6 +24,8 @@ $mss-ratio : 14/6
     img
       width: 100%
   .manual-ss-controls
+    >div
+      padding: 0
     +respond-to(sm-max)
       >div
         margin: 0
@@ -37,9 +41,20 @@ $mss-ratio : 14/6
     text-transform: uppercase
     color: $white-z
     padding: 30px 0
+    +respond-to(sm-max)
+      width: 100%
+      border: 0
+      text-align: left
+      padding: 10px 0
     b
       display: block
       margin-bottom: -10px
+    span
+      +respond-to(sm-max)
+        width: 49%
+        display: inline-block
+        margin: 0
+        padding: 15px 30px
   .manual-ss-legend-c
     @extend .manual-ss-legend
     margin: auto
@@ -48,3 +63,15 @@ $mss-ratio : 14/6
     padding: 0
     img
       padding: 0
+
+.center-legend
+  +fuller
+  position: relative
+  display: flex
+  overflow: hidden
+  >*
+    margin: auto
+  +respond-to(md)
+    height: ( $container-md * 0.75 / $mss-ratio ) - ( $container-md-lite * 0.25 / $mss-ratio  )
+  +respond-to(lg)
+    height: ( $container-lg * 0.75 / $mss-ratio ) - ( $container-lg-lite * 0.25 / $mss-ratio  )

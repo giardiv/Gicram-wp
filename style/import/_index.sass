@@ -11,6 +11,12 @@ $sq-lines-to-show: 5
     height: 1013px
 .square-text
   background: $almost-white-z
+.reversed-square
+  display: flex
+  >div:first-child
+    order: 2
+  >div:last-child
+    order: 1
 .square
   position: relative
   +respond-to(sm)
@@ -108,12 +114,18 @@ $bg-zoom : 10px
     top: 25%
     transition: all 0.5s
 
+.container-video
+  padding: 0
+  iframe
+    padding: 0
 #video
-  +respond-to(xs)
-    height: 100vw / $ratio-video
-  +respond-to(sm)
-    height: $container-sm / $ratio-video
-  +respond-to(md)
-    height: $container-md / $ratio-video
-  +respond-to(lg)
-    height: $container-lg / $ratio-video
+  height: 100vw / $ratio-video
+  width: 100%
+  // +respond-to(xs)
+  //   height: 100vw / $ratio-video
+  // +respond-to(sm)
+  //   height: $container-sm / $ratio-video
+  // +respond-to(md)
+  //   height: $container-md / $ratio-video
+  // +respond-to(lg)
+  //   height: $container-lg / $ratio-video

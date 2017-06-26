@@ -1,7 +1,7 @@
 
     <!-- Footer -->
     <footer id="footer" class="row container-footer container-dark">
-      <div class="col-md-2">
+      <div class="col-md-2 container-social">
         <h3>Contacts<br />–</h3>
         <div class="row">
           <span class="footer-icons" aria-hidden="true"><i class="fa fa-facebook-official fa-2x"></i></span>

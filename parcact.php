@@ -1,7 +1,8 @@
 <?php include "header.php" ?>
 
 <div class="row container-dark">
-  <h1 class="col-md-11 col-md-offset-1 green-cl">Parc<br />D'activité</h1>
+  <div class="top-background-image" style="background-image:url(images/salam-vert.jpg)"></div>
+  <h1 class="col-md-11 col-md-offset-1 almost-white-cl">Parc<br />D'activité</h1>
 </div>
 <!-- Blockquote pointed -->
   <div class="row container-dark">
@@ -95,10 +96,10 @@
       <div class="background-full"></div>
       <h1 class="h1-mini">Nos réalisations</h1>
       <div class="row green-cl">
-        <h2>Sonepar <small class="green-cl">23444m<sup>2</sup></small></h2>
+        <h2 class="animated left-animated">Sonepar <small class="green-cl">23444m<sup>2</sup></small></h2>
       </div>
-      <div class="row row-manual-ss green-bg">
-        <div class="col-md-9 col-xs-12 manual-ss">
+      <div class="row row-manual-ss green-bg late-animated opacity-animated">
+        <div class="col-md-9 col-xs-12 manual-ss left-relative-animated animated">
           <div class="manual-ss-img" style="background-image:url(images/park.jpg)"></div>
           <div class="manual-ss-img" style="background-image:url(images/park1.jpg)"></div>
           <div class="manual-ss-img" style="background-image:url(images/park2.jpg)"></div>
@@ -106,24 +107,28 @@
         </div>
         <div class="col-md-3 col-xs-12 manual-ss-controls">
           <div class="row col-md-12 col-xs-6">
-            <img data-to="1" src="images/park.jpg" class="col-md-6 col-xs-6" />
-            <img data-to="2" src="images/park1.jpg" class="col-md-6 col-xs-6" />
+            <img data-to="1" src="images/park.jpg" class="col-md-6 col-xs-6 height-animated animated" />
+            <img data-to="2" src="images/park1.jpg" class="col-md-6 col-xs-6 height-animated animated" />
           </div>
           <div class="row col-md-12 col-xs-6">
-            <img data-to="3" src="images/park2.jpg" class="col-md-6 col-xs-6" />
-            <img data-to="4" src="images/park3.jpg" class="col-md-6 col-xs-6" />
+            <img data-to="3" src="images/park2.jpg" class="col-md-6 col-xs-6 height-animated animated" />
+            <img data-to="4" src="images/park3.jpg" class="col-md-6 col-xs-6 height-animated animated" />
           </div>
           <div class="row">
-            <div class="center-legend">
-              <div class="manual-ss-legend">
-                Nom du projet :<br />
-                <b>Gicram</b><br />
-                Date début :<br />
-                <b>12 mars 2012</b><br />
-                Matériaux utilisés : <br />
-                <b>Bois / verre</b><br />
-                Client : <br />
-                <b>Thomas Smith</b>
+            <div class="center-legend green-bg late-animated opacity-animated top-padding-animated">
+              <div class="manual-ss-legend row">
+                <span>
+                  Nom du projet :<br />
+                  <b>Gicram</b><br />
+                  Date début :<br />
+                  <b>12 mars 2012</b><br class="not-mob" />
+                </span>
+                <span>
+                  Matériaux utilisés : <br />
+                  <b>Bois / verre</b><br />
+                  Client : <br />
+                  <b>Thomas Smith</b>
+                </span>
               </div>
             </div>
           </div>

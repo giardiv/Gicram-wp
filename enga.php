@@ -25,14 +25,15 @@
       <span class="text">Nos garanties</span>
     </h1>
     <div class="row container-dark double-container">
-      <div class="background-full-right"></div>
+      <div class="background-full-right not-mob"></div>
       <div class="col-md-6 double">
         <h4 class="h4-double">Accompagnement sur mesure</h4>
         <p>
           Notre capacité d’étude (pré-étude, besoins, aspirations) s’affirme comme une faculté privilégiée de répondre à toutes les questions dès le départ. Nous prenons le temps d’apprendre à vous connaître et de définir précisément les contours de votre programme afin d’y répondre de la manière la plus pointue et la plus efficace possible.
         </p>
       </div>
-      <div class="col-md-6 double">
+      <div class="col-md-6 double container-dark">
+        <div class="background-full only-mob-plus"></div>
         <h4 class="h4-double">Adaptabilité</h4>
         <p>
           Que vous arriviez avec votre propre terrain ou souhaitiez que nous vous en proposions un, chaque programme est un nouveau défi que nous nous engageons à relever à vos côtés. D’un simple immeuble au parc complet multi-pôles ou activités, d’un programme clé-en-main ou multi-utilisateurs, qu’il s’agisse de construction ou de rénovation à des fins locatives, de plein usage ou de revente, le groupe Gicram est un interlocuteur et partenaire de choix. Nous nous attacherons à répondre à toutes vos demandes et aspirations architecturales, techniques et fiancières.
@@ -40,28 +41,30 @@
       </div>
     </div>
     <div class="row container-dark double-container">
-      <div class="background-full-left"></div>
+      <div class="background-full-left not-mob"></div>
       <div class="col-md-6 double">
         <h4 class="h4-double">Réactivité</h4>
         <p>
           Le dynamisme et l’expérience de notre équipe nous permet de répondre dans les plus brefs délais aux différentes phases de l’étude. Le suivi de chantier, une fois le projet lancé, est assuré au quotidien sur le terrain par des professionnels. Nous vous accompagnons à chaque étape, depuis la conception du projet à sa livraison.
         </p>
       </div>
-      <div class="col-md-6 double">
+      <div class="col-md-6 double container-dark">
+        <div class="background-full only-mob-plus"></div>
         <h4 class="h4-double">Tenue des délais</h4>
         <p>Notre maîtrise dans la technique et la gestion des chantiers nous permet de vous proposer un calendrier des opérations rigoureux, découpé par phases et lots de livraison, pour une tenue ferme des délais annoncés sur la globalité de l’opération.
         </p>
       </div>
     </div>
     <div class="row container-dark double-container">
-      <div class="background-full-right"></div>
+      <div class="background-full-right not-mob"></div>
       <div class="col-md-6 double">
         <h4 class="h4-double">Maîtrise du coût global</h4>
         <p>
           Le groupe Gicram vous fait bénéficier d’un coût de revient calculé, non sur l’opération ponctuelle, mais en fonction d’un important volume d’affaires annuel. Notre rayon d’action et notre expérience nous permettent de sélectionner pour vous les entreprises les plus performantes dans leur spécialité et ce, sous notre entière responsabilité technique et financière. <br />Notre savoir-faire nous permet de nous engager sur un coût global de construction clé-en-main, défini par des plans, un cahier des charges, un planning, et un budget contractuel qui seront scrupuleusement suivis.
         </p>
       </div>
-      <div class="col-md-6 double">
+      <div class="col-md-6 double container-dark">
+        <div class="background-full only-mob-plus"></div>
         <h4 class="h4-double">Qualité & parfait achèvement</h4>
         <p>
           Parce que la qualité se décline jusque dans le moindre détail, nous apportons une attention toute particulière au fini. Chaque espace est ainsi traité avec le même soin : les finitions font toute la différence dans le ressenti  utilisateur de chaque programme. Des espaces extérieurs (parkings, espaces paysagers, espaces circulatoires, quais de livraison…) aux aménagements intérieurs (passerelles, ascenseurs, espaces de vie et de travail, sanitaires, laboratoires, espaces de stockage…), chaque espace fait l’objet de toutes les attentions pour un rendu de qualité.
@@ -69,7 +72,7 @@
       </div>
     </div>
     <div class="row container-dark double-container">
-      <div class="background-full-left"></div>
+      <div class="background-full-left not-mob"></div>
       <div class="col-md-6 double">
         <h4 class="h4-double">Éco-efficience</h4>
         <p>
@@ -131,7 +134,7 @@ et copilote de la commission « Développement durable » d’Afilog</b>
       <div class="background-full-dark"></div>
       <span class="text">14 CIBLES HQE</span></h1>
     <div class="row container-dark">
-      <div class="background-full-left"></div>
+      <div class="background-full-left not-mob"></div>
       <div class="container-dark-vert">
         <div class="col-md-3 quad">
           <h4 class="h4-double">ÉCO-CONSTRUCTION</h4>
@@ -145,7 +148,8 @@ et copilote de la commission « Développement durable » d’Afilog</b>
           </p>
         </div>
         <div class="col-md-3 quad container-dark">
-          <div class="background-full-vert-light"></div>
+          <div class="background-full-vert-light not-mob"></div>
+          <div class="background-full only-mob-plus"></div>
           <h4 class="h4-double">ÉCO-GESTION</h4>
           <p>
             <b>4.</b><br />
@@ -159,7 +163,7 @@ et copilote de la commission « Développement durable » d’Afilog</b>
           </p>
         </div>
         <div class="col-md-3 quad container-dark">
-          <div class="background-full-vert"></div>
+          <div class="background-full-vert not-mob"></div>
           <h4 class="h4-double">CONFORT</h4>
           <p>
             <b>8.</b><br />
@@ -172,7 +176,8 @@ et copilote de la commission « Développement durable » d’Afilog</b>
             Confort olfactif
           </p>
         </div>
-        <div class="col-md-3 quad">
+        <div class="col-md-3 quad container-dark">
+          <div class="background-full only-mob-plus"></div>
           <h4 class="h4-double">SANTÉ</h4>
           <p>
             <b>12.</b><br />
@@ -192,7 +197,7 @@ et copilote de la commission « Développement durable » d’Afilog</b>
   </h1>
   <div class="row triple-container container-dark">
 
-    <div class="background-full-right"></div>
+    <div class="background-full-right not-mob"></div>
     <div class="col-md-4 text-center">
       <h4 class="h4-double">cible A</h4>
       Conditions de travail

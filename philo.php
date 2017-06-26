@@ -66,7 +66,7 @@ Notre Groupe réunit aujourd’hui toutes les composantes et expertises qui gara
   </div>
   <div class="col-md-8 background-body container-dark">
     <div class="background-full-vert background-body not-mob"></div>
-    <div class="row double-triple">
+    <div class="row double-triple padder-sm-0">
       Architectes, ingénieurs, décorateurs  techniciens de chantier, spécialistes fonciers, financiers… notre Groupe réunit en son sein une pluralité de spécialistes de haut niveau issus des meilleures filières. Ils garantissent un haut degré d’excellence et d’innovation pour chacune de vos réalisations dans une approche exceptionnellement lucide de l’acte de construire, à votre service.
     </div>
   </div>
@@ -79,7 +79,7 @@ Notre Groupe réunit aujourd’hui toutes les composantes et expertises qui gara
   <div class="background-full-right not-mob"></div>
   <div class="col-md-8 background-body container-dark order-2">
     <div class="background-full-vert background-body not-mob"></div>
-    <div class="row double-triple">
+    <div class="row double-triple padder-sm-0">
       Nous choisissons et adaptons des solutions de construction sur mesure (béton ou métallique, préfabriquée ou traditionnelle, etc.) en fonction des caractéristiques de votre programme. Nous vous offrons un véritable choix à travers différentes propositions, comparées et analysées afin de vous proposer le bâtiment et les installations les plus adaptées suivants les besoins exprimés par votre programme.
     </div>
     <div class="btn-ctn">
@@ -92,7 +92,7 @@ Notre Groupe réunit aujourd’hui toutes les composantes et expertises qui gara
 </div>
 <h1 class="h1-mini container-dark">
  <span class="background-full-dark"></span>
- <span class="text no-after"><a href="#" class="text-red">Nos références</a> /
+ <span class="text no-after"><a href="#" class="text-red">Nos références</a><br class="only-mob" /> /<br class="only-mob" />
    <a href="#" class="text-red">Nos clients témoignent</a></span>
 </h1>
 <?php include "footer.php" ?>

@@ -1,14 +1,27 @@
 // UTILS
+.only-mob
+  display: none
+  +respond-to(xs-max)
+    display: inherit
+.only-mob-plus
+  display: none
+  +respond-to(sm-max)
+    display: inherit
 .not-mob
   +respond-to(sm-max)
     display: none
 .col-stick-top, .triple-container>.col-stick-top
-  padding-bottom: 0
+  +respond-to(sm-max)
+    padding-bottom: 0
 .col-stick-bottom, .triple-container>.col-stick-bottom
-  padding-top: 0
+  +respond-to(sm-max)
+    padding-top: 0
 
 .padder-xs-0
   +respond-to(xs-max)
+    padding: 0
+.padder-sm-0, .triple-container .padder-sm-0
+  +respond-to(sm-max)
     padding: 0
 .padder-xs-1-bot, .container-top>.padder-xs-1-bot
   +respond-to(xs-max)
@@ -24,3 +37,7 @@
       order: 2
     .order-3
       order: 3
+
+
+.h4-under.green-cl, .h4-under.blue-cl, .h4-under.red-cl
+  margin-bottom: 5px

@@ -1,12 +1,17 @@
 <?php include "header.php" ?>
+
+  </div>
     <!-- Video -->
-    <div class="row container-dark">
-        <div class="background-full almost-white"></div>
+  <div class="container-fluid container-video">
+    <div class="row container-dark top-row">
+      <div class="background-full almost-white"></div>
       <iframe id="video" src="https://player.vimeo.com/video/158933289?title=0&amp;byline=0&amp;portrait=0" class="col-md-12 col-sm-12 col-xs-12 full-mob" height="641" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
     </div>
+  </div>
+  <div class="container container-top full-mob">
     <!-- Dern Ope / SS -->
-    <div class="row container-dark padder-1 padder-xs-1-bot">
-        <div class="background-full"></div>
+    <div class="row container-dark padder-1 padder-xs-1-bot not-top-row">
+      <div class="background-full"></div>
       <h1 class="col-md-11 col-md-offset-1 animated left-animated">Dernières<br />Opérations</h1>
       <hr class="hr-h1-xs"/>
       <div class="row ss-caption ss-caption-z">

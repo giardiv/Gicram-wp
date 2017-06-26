@@ -1,5 +1,6 @@
 // GENERAL
 $body-bg : $white-z
+$top-padding : 150px
 
 body
   background-color: $body-bg
@@ -15,7 +16,12 @@ body
 .container-top > .row
   padding: 0 0
   &:first-child
-    padding-top: 150px
+    padding-top: $top-padding
+.container-top > .not-top-row:first-child
+  padding-top: 0
+.top-row
+  padding-top: $top-padding
+
 
 @import "general/_header.sass"
 
@@ -37,8 +43,9 @@ blockquote
 ul
   padding-left: 15px
   margin-bottom: 50px
+  margin-left: 4px
   li
-    margin-top: 16px
+    //margin-top: 16px
     font-size: 12pt
 ul:last-child
   margin-bottom: 0
@@ -95,14 +102,7 @@ ul:last-child
   margin-bottom: 50px
 .padder-1, *>.padder-1, .container-top>.padder-1
   padding: 40px 0
-.center-legend
-  +fuller
-  position: relative
-  display: flex
-  >*
-    margin: auto
-  +respond-to(lg)
-    height: 360px
+
 
 @import "general/_btn.sass"
 @import "general/_typo.sass"
@@ -117,13 +117,29 @@ ul:last-child
 // ANIMATED
 .animated
   transition: all 0.5s
-.left-animated
-  margin-left: -100px
-  opacity: 0
+.late-animated
+  transition: all 0.5s
+  transition-delay: 0.6s
 
-.top-animated
-  margin-top: 100px
+.opacity-animated
+  background: rgba(255 , 255, 255, 0)
+.left-animated
+  margin-left: -100px !important
   opacity: 0
+.height-animated
+  margin-right: 49%
+  width: 1%
+  margin-bottom: 20%
+.left-relative-animated
+  margin-left: -150px
+  margin-right: 150px
+  opacity: 0
+.top-animated
+  margin-top: 100px !important
+  opacity: 0
+.top-padding-animated
+  padding-top: 400px 
+
 .top-animated-b
   +transition-multiple(margin-top 300ms, opacity 350ms)
   //+transition-multiple(margin-top 800ms, opacity 900ms)

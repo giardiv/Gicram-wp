@@ -77,13 +77,12 @@ $(function() {
                 $("#header-bg").css({ opacity : hd['opacity']['to'] });
             }
         }
-        $.each($(".animated, .top-animated-b"), function(){
+        $.each($(".animated, .top-animated-b, .late-animated"), function(){
             //margin = 200;
             if( $(this).isInViewport() ){
                 $(this).delay(600).removeClass("left-animated");
-                $(this).delay(600).removeClass(
-                    "top-animated"
-                );
+                $(this).delay(600).removeClass("top-animated" );
+                $(this).delay(600).removeClass("height-animated left-relative-animated opacity-animated top-padding-animated");
             }
         })
     })

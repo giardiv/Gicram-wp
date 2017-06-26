@@ -5,7 +5,8 @@
     position: relative
 .container-dark-vert
   @extend .container-dark
-  overflow-y: hidden
+  +respond-to(md)
+    overflow-y: hidden
 .background-full
   position: absolute
   width: 200%
@@ -39,3 +40,11 @@
   background: $gray-z
 .background-body
   background: $body-bg
+
+.top-background-image
+  background-size: cover
+  background-position: center center
+  width: 100vw
+  left: 50%
+  margin-left: -50vw
+  @extend .background-full
